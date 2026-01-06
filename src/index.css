@@ -1,0 +1,311 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Unbounded font  */
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* global css start */
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  font-family: "Unbounded", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Unbounded", sans-serif;
+  background-color: #000;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+}
+
+/* body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(180deg,
+      rgba(2, 2, 1, 0.1) 0%,
+      rgba(16, 17, 14, 0.1) 100%);
+  box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.1) inset;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--Gradient-5,
+      linear-gradient(180deg, #99ffa3 0%, #68ee76 100%));
+  outline: 0.5px solid #fff;
+  border-radius: 30px;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.text-fill-black {
+  /* --text-fill-color: #000; */
+  color: #000;
+}
+
+.text-fill-white {
+  /* --text-fill-color: #fff; */
+  color: white;
+}
+
+@layer components {
+  .heading2 {
+    @apply text-[1.3rem] md:text-[2rem] uppercase font-normal leading-normal mb-5 relative;
+  }
+
+  .heading5 {
+    @apply text-lg md:text-[1.2rem] 2xl:text-[1.5rem] uppercase font-normal leading-snug mb-5;
+  }
+
+  .border-line {
+    @apply w-20 h-1 bg-black rounded-md mx-auto block;
+  }
+
+  .para {
+    @apply text-base lg:text-lg 2xl:text-xl leading-relaxed text-gray-600 mb-10;
+  }
+
+  .para2 {
+    @apply text-sm lg:text-base leading-relaxed text-gray-600;
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 91%;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  width: 91%;
+} 
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1260px;
+  }
+  .container-fluid {
+    max-width: 1366px;
+  } 
+}
+
+/* global css end */
+
+@keyframes float {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+.stone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+.shine-text .shine {
+  background: linear-gradient(
+    120deg,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0.6) 40%,
+    #ffffff 70%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 1s ease;
+}
+
+/* Triggered on overlap */
+.shine-active {
+  animation: shine 5s forwards;
+}
+
+/* Optional: add glow to text */
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.dynamic-light-text {
+  position: relative;
+  display: inline-block;
+  /* background: transparent; */
+  background: rgba(255, 255, 255, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(255, 255, 255, 1);
+  /* -webkit-text-fill-color: transparent; */
+  pointer-events: none;
+  transition: background 0.2s ease;
+}
+
+.dynamic-light-text.active {
+  background: radial-gradient(
+    300px circle at var(--x) var(--y),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.6)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* -webkit-text-fill-color: transparent; */
+  transition: background 0.2s ease;
+}
+
+.stroke-white {
+  -webkit-text-stroke: 1px white;
+}
+
+/* header css start */
+.nav-list a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  padding: 0;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.nav-list a .item1 {
+  display: block;
+  -webkit-transition: -webkit-transform 500ms
+    cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-list .item2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: inline;
+  text-align: center;
+  -webkit-transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 0.8;
+}
+
+.nav-list a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.nav-list a:hover .item1 {
+  color: #fff;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.nav-list a:hover .item2 {
+  top: 0;
+  opacity: 1;
+}
+
+.nav-list a:active {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+/* header css end */
+
+
+.projects-wrapper {
+  position: relative;
+  height: 900vh; /* 100vh per accordion item if you have 4 items */
+}
+
+.projects {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}

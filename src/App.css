@@ -1,0 +1,53 @@
+/* .navlink::before,
+.navlink::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+.navlink span::before,
+.navlink span::after {
+  content: "";
+  width: 1px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+.navlink:hover::before,
+.navlink:hover::after {
+  width: 100%;
+}
+
+.navlink:hover span::before,
+.navlink:hover span::after {
+  height: 100%;
+}
+
+.navlink::after {
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+.navlink span::after {
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+.navlink::before {
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+
+.navlink span::before {
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+} */
