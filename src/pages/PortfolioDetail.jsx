@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { siteData } from "../data";
 import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import { ArrowsPointingOutIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import PortfolioNavigation from "../components/work/PortfolioNavigation";
 
 export default function PortfolioDetail() {
@@ -13,6 +12,15 @@ export default function PortfolioDetail() {
   const project = siteData.portfolio.projects.find((p) => p.slug === slug);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const videoRef = useRef(null);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveImageIndex((prev) => (prev === project.gallery.length - 1 ? 0 : prev + 1));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [project.gallery.length]);
 
   const toggleFullscreen = async () => {
     const video = videoRef.current;
@@ -217,31 +225,55 @@ export default function PortfolioDetail() {
                   className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
                 />
               </div>
-              <div 
-              onClick={() => window.location.href = `/media/${slug}`}
-              className="col-span-6 lg:col-span-4 relative rounded-lg lg:rounded-[25px] overflow-hidden max-h-[300px]">
-                <Swiper
-                  modules={[Autoplay]}
-                  autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                  }}
-                  loop
-                  className="w-full h-full z-10"
+              <div
+                onClick={() => (window.location.href = `/media/${slug}`)}
+                className="
+    group
+    col-span-6 lg:col-span-4 
+    relative rounded-lg lg:rounded-[25px] 
+    overflow-hidden max-h-[300px] 
+    cursor-pointer
+  "
+              >
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={activeImageIndex}
+                    src={project.gallery[activeImageIndex]}
+                    alt="animated-gallery"
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.98 }}
+                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    className="w-full h-full max-h-[300px] object-cover object-top absolute inset-0"
+                  />
+                </AnimatePresence>
+                <div
+                  className="
+      absolute inset-0 z-20 
+      flex items-center justify-center 
+      bg-gray-900/70 
+      transition-colors duration-300
+      group-hover:bg-gray-900/80
+    "
                 >
-                  {project.gallery.map((img, index) => (
-                    <SwiperSlide key={index}>
-                      <img
-                        src={img}
-                        alt={`gallery-slide-${index}`}
-                        className="w-full h-full max-h-[300px] object-cover object-top"
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-
-                <div className="absolute inset-0 z-20 flex items-center justify-center bg-gray-900/70 pointer-events-none">
-                  <span className="text-white text-lg font-semibold uppercase tracking-wide">Show More</span>
+                  <span
+                    className="
+        text-white 
+        text-xs sm:text-sm md:text-base 
+        font-semibold uppercase tracking-widest
+        relative
+      "
+                  >
+                    Show More
+                    <span
+                      className="
+          absolute left-0 -bottom-1
+          w-0 h-[1px] bg-white
+          transition-all duration-300
+          group-hover:w-full
+        "
+                    />
+                  </span>
                 </div>
               </div>
             </div>
