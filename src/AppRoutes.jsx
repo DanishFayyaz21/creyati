@@ -17,6 +17,7 @@ import Advertising from "./pages/services/Advertising";
 import WebDevelopment from "./pages/services/WebDevelopment";
 import ThreeD from "./pages/services/ThreeD";
 import Strategy from "./pages/services/Strategy";
+import Media from "./pages/Media";
 
 const AppRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AppRoutes = () => {
       <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/services" element={<ServicesPage />} />
+      <Route path="/media/:slug" element={<Media />} />
 
       {/* ✅ Static service inner pages */}
       <Route path="/services/videography" element={<Videography />} />

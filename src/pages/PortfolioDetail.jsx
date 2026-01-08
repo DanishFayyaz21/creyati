@@ -217,7 +217,9 @@ export default function PortfolioDetail() {
                   className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
                 />
               </div>
-              <div className="col-span-6 lg:col-span-4 relative rounded-lg lg:rounded-[25px] overflow-hidden max-h-[300px]">
+              <div 
+              onClick={() => window.location.href = `/media/${slug}`}
+              className="col-span-6 lg:col-span-4 relative rounded-lg lg:rounded-[25px] overflow-hidden max-h-[300px]">
                 <Swiper
                   modules={[Autoplay]}
                   autoplay={{
