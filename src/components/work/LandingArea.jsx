@@ -19,7 +19,7 @@ const LandingArea = () => {
           </span>
         </h1>
 
-        <style jsx>{`
+        <style >{`
           .text-container {
             position: relative;
             width: 100vw;

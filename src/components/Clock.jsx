@@ -1,34 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, forwardRef } from "react";
 
-const SydneyClock = ({ ref }) => {
+const SydneyClock = forwardRef((props, ref) => {
   const [time, setTime] = useState("");
 
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-
-      // Convert to Sydney time
       const sydneyTime = new Date(
         now.toLocaleString("en-US", { timeZone: "Australia/Sydney" })
       );
 
-      // Format HH:MM:SS manually
       const hours = String(sydneyTime.getHours()).padStart(2, "0");
       const minutes = String(sydneyTime.getMinutes()).padStart(2, "0");
       const seconds = String(sydneyTime.getSeconds()).padStart(2, "0");
 
-      // Calculate GMT offset in hours
-      const offsetMinutes = -sydneyTime.getTimezoneOffset(); // in minutes
-      const offsetSign = offsetMinutes >= 0 ? "+" : "-";
-      const offsetHours = String(
-        Math.floor(Math.abs(offsetMinutes) / 60)
-      ).padStart(2, "0");
-      const offsetMins = String(Math.abs(offsetMinutes) % 60).padStart(2, "0");
-
-      const offset = `GMT${offsetSign}${offsetHours}:${offsetMins}`;
-
       setTime(`${hours}:${minutes}:${seconds}`);
-      // setTime(`${hours}:${minutes}:${seconds} (${offset})`);
     };
 
     updateTime();
@@ -45,6 +31,6 @@ const SydneyClock = ({ ref }) => {
       SYD | {time}
     </div>
   );
-};
+});
 
 export default SydneyClock;

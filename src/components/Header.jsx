@@ -180,6 +180,7 @@ const Header = () => {
               <SydneyClock ref={clockRef} />
             </div>
             <Link
+              ref={contactBtnRef}
               to="/contact"
               className="btn h-9 flex items-center justify-center px-5 py-2 rounded-lg text-sm font-medium text-black leading-none bg-white flex-none"
             >
