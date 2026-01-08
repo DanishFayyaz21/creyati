@@ -1,4 +1,7 @@
 import { useParams } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import { siteData } from "../data";
 import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import { ArrowsPointingOutIcon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -54,21 +57,13 @@ export default function PortfolioDetail() {
 
     return () => {
       document.removeEventListener("fullscreenchange", handleFullscreenChange);
-      document.removeEventListener(
-        "webkitfullscreenchange",
-        handleFullscreenChange
-      );
-      document.removeEventListener(
-        "msfullscreenchange",
-        handleFullscreenChange
-      );
+      document.removeEventListener("webkitfullscreenchange", handleFullscreenChange);
+      document.removeEventListener("msfullscreenchange", handleFullscreenChange);
     };
   }, []);
 
   if (!project) {
-    return (
-      <div className="text-white text-center py-20">Project not found</div>
-    );
+    return <div className="text-white text-center py-20">Project not found</div>;
   }
 
   return (
@@ -92,25 +87,19 @@ export default function PortfolioDetail() {
             <span className="text-base font-bold leading-none flex items-center justify-center uppercase">
               <ChevronRightIcon className="w-6 h-6" /> Clients
             </span>
-            <span className="text-base font-normal leading-none font-urbanist">
-              {project.client}
-            </span>
+            <span className="text-base font-normal leading-none font-urbanist">{project.client}</span>
           </div>
           <div className="border rounded-[20px] px-6 py-3 min-h-[76px] lg:min-h-[118px] flex flex-col justify-center items-start lg:items-center gap-2 lg:gap-4">
             <span className="text-base font-bold leading-none flex items-center justify-center uppercase">
               <ChevronRightIcon className="w-6 h-6" /> Timeline
             </span>
-            <span className="text-base font-normal leading-none font-urbanist">
-              {project.timeline}
-            </span>
+            <span className="text-base font-normal leading-none font-urbanist">{project.timeline}</span>
           </div>
           <div className="border rounded-[20px] px-6 py-3 min-h-[76px] lg:min-h-[118px] flex flex-col justify-center items-start lg:items-center gap-2 lg:gap-4">
             <span className="text-base font-bold leading-none flex items-center justify-center uppercase">
               <ChevronRightIcon className="w-6 h-6" /> deliverables
             </span>
-            <span className="text-base font-normal leading-none font-urbanist">
-              {project.deliverables.join(", ")}
-            </span>
+            <span className="text-base font-normal leading-none font-urbanist">{project.deliverables.join(", ")}</span>
           </div>
         </div>
 
@@ -148,20 +137,17 @@ export default function PortfolioDetail() {
         {/* Work Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 mb-10">
           <div className="lg:col-span-7 border-[0.5px] border-white px-12 py-7">
-            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-3">
-              BRIEF
-            </h2>
+            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-3">BRIEF</h2>
             <p className="text-fill-white">{project.ourWork}</p>
           </div>
           <div className="lg:col-span-5 border-[0.5px] border-white px-12 py-7">
-            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-3">
-              Type of Work
-            </h2>
-            <span className="text-base font-normal leading-none text-white mb-5">
-              {project.campaign}
-            </span>
+            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-3">Type of Work</h2>
+            <span className="text-base font-normal leading-none text-white mb-5">{project.campaign}</span>
             {project.typeOfWork.map((item, idx) => (
-              <p className="text-fill-white" key={idx}>
+              <p
+                className="text-fill-white"
+                key={idx}
+              >
                 {item}
               </p>
             ))}
@@ -231,19 +217,35 @@ export default function PortfolioDetail() {
                   className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
                 />
               </div>
-              <div className="col-span-6 lg:col-span-4">
-                <img
-                  src={project.gallery[7]}
-                  alt="img-8"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
-                />
+              <div className="col-span-6 lg:col-span-4 relative rounded-lg lg:rounded-[25px] overflow-hidden max-h-[300px]">
+                <Swiper
+                  modules={[Autoplay]}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
+                  loop
+                  className="w-full h-full z-10"
+                >
+                  {project.gallery.map((img, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        src={img}
+                        alt={`gallery-slide-${index}`}
+                        className="w-full h-full max-h-[300px] object-cover object-top"
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+
+                <div className="absolute inset-0 z-20 flex items-center justify-center bg-gray-900/70 pointer-events-none">
+                  <span className="text-white text-lg font-semibold uppercase tracking-wide">Show More</span>
+                </div>
               </div>
             </div>
           </div>
           <div className="lg:col-span-3">
-            <h5 className="text-xl leading-none text-fill-white font-normal mb-2">
-              {project.timelime}
-            </h5>
+            <h5 className="text-xl leading-none text-fill-white font-normal mb-2">{project.timelime}</h5>
 
             <p className="text-fill-white font-urbanist mb-12">
               <b>{project.stage}</b> <br /> {project.stageDetail}
@@ -252,7 +254,10 @@ export default function PortfolioDetail() {
             <ul className="relative font-urbanist space-y-16">
               {project.phases && project.phases.length > 0 ? (
                 project.phases.map((item, index) => (
-                  <li key={index} className="relative pl-8">
+                  <li
+                    key={index}
+                    className="relative pl-8"
+                  >
                     {/* Dot */}
                     <div className="absolute -left-3 top-0 w-[22px] h-[22px] bg-white rounded-full"></div>
                     {/* Vertical line (below the dot, hidden on last) */}
@@ -333,11 +338,8 @@ export default function PortfolioDetail() {
         {/* Results */}
         <div className="grid grid-cols-1 lg:grid-cols-12 mb-10">
           <div className="lg:col-span-7 grid lg:grid-cols-2 gap-10 border-[0.5px] border-white px-12 py-7">
-            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-3">
-              DELIVERABLES
-            </h2>
-            {project.deliverablesDetail &&
-            project.deliverablesDetail.length > 0 ? (
+            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-3">DELIVERABLES</h2>
+            {project.deliverablesDetail && project.deliverablesDetail.length > 0 ? (
               <ul className="list-disc list-inside space-y-3 text-white font-urbanist">
                 {project.deliverablesDetail.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -360,9 +362,7 @@ export default function PortfolioDetail() {
             </p> */}
           </div>
           <div className="lg:col-span-5 border-[0.5px] border-white px-12 py-7">
-            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-8">
-              RESULTS
-            </h2>
+            <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-8">RESULTS</h2>
             {project.resultsDetail && project.resultsDetail.length > 0 ? (
               <ul className="list-disc list-inside space-y-3 text-white font-urbanist">
                 {project.resultsDetail.map((item, index) => (
