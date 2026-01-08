@@ -74,46 +74,55 @@ export const siteData = {
     list: [
       {
         name: "RABBANA",
+        slug: "rabbana",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+41.png",
       },
       {
         name: "CERRONI",
+        slug: "cerroni",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+42.png",
       },
       {
         name: "LAVANA",
+        slug: "lavana",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+43.png",
       },
       {
         name: "MASAL",
+        slug: "masal",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+44.png",
       },
       {
         name: "CARBNITE",
+        slug: "carbnite",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+45.png",
       },
       {
         name: "MILIDAY",
+        slug: "miliday",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+46.png",
       },
       {
         name: "HARPAH",
+        slug: "harpah",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+47.png",
       },
       {
         name: "RAVEPACK",
+        slug: "ravepack",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+48.png",
       },
       {
         name: "BARBER INDUSTRIES",
+        slug: "barber-industries",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+49.png",
       },

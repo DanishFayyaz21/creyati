@@ -41,7 +41,9 @@ const Products = () => {
       >
         {products.list.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="group cursor-pointer rounded-2xl overflow-hidden shadow-lg relative">
+            <div 
+              onClick={() => navigate(`/portfolio/${item.slug}`)}
+            className="group cursor-pointer rounded-2xl overflow-hidden shadow-lg relative">
               <img
                 src={item.img}
                 alt={item.name}
