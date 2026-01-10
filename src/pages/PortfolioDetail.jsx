@@ -16,11 +16,11 @@ export default function PortfolioDetail() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveImageIndex((prev) => (prev === project.gallery.length - 1 ? 0 : prev + 1));
+      setActiveImageIndex((prev) => (prev === project?.gallery?.length - 1 ? 0 : prev + 1));
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [project.gallery.length]);
+  }, [project?.gallery?.length]);
 
   const toggleFullscreen = async () => {
     const video = videoRef.current;
