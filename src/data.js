@@ -269,8 +269,11 @@ export const siteData = {
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/harpah.png",
         category: "Gym & Fitness",
         title: "Harpah",
-        video:
+        video: [
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah.mp4",
+          
+          
+        ],
         client: "Fashion brand",
         timeline: "Completed",
         deliverables: ["Videos", "Stills"],
