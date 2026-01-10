@@ -7,7 +7,7 @@ export default function Media() {
   const { slug } = useParams();
   const project = siteData.portfolio.projects.find((p) => p.slug === slug);
 
-  const [activeTab, setActiveTab] = useState("still"); 
+  const [activeTab, setActiveTab] = useState("still");
 
   if (!project) {
     return <div className="text-white text-center py-20">Media not found</div>;
@@ -19,7 +19,6 @@ export default function Media() {
   return (
     <div className="bg-black text-white min-h-screen py-28">
       <div className="container">
-      
         <div className="flex justify-center items-center mb-6">
           <img
             src={project.logo}
@@ -28,24 +27,28 @@ export default function Media() {
           />
         </div>
 
-        <div className="flex justify-center gap-3 mb-14">
-          {["still", "video"].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-6 py-1.5 rounded-full text-xs sm:text-sm uppercase tracking-wider border transition-all duration-300
-                ${
-                  activeTab === tab
-                    ? "bg-white text-black"
-                    : "border-white text-white hover:bg-white hover:text-black"
-                }`}
-            >
-              {tab === "still" ? "Still" : "Videos"}
-            </button>
-          ))}
+        <div className="flex justify-center gap-6 mb-14 flex-wrap">
+          {["still", "video"].map((tab) => {
+            const isActive = activeTab === tab;
+
+            return (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`btn uppercase max-w-fit transition-all duration-300
+          ${
+            isActive
+              ? "bg-white text-black"
+              : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
+          }`}
+              >
+                {tab === "still" ? "Still" : "Videos"}
+              </button>
+            );
+          })}
         </div>
+
         <AnimatePresence mode="wait">
-         
           {activeTab === "still" && (
             <motion.div
               key="images"
@@ -55,7 +58,6 @@ export default function Media() {
               transition={{ duration: 0.45, ease: "easeOut" }}
               className="grid gap-3"
             >
-            
               {gallery.length >= 3 && (
                 <div className="grid grid-cols-12 gap-3">
                   <div className="col-span-12 lg:col-span-5">
@@ -137,9 +139,7 @@ export default function Media() {
                   </div>
                 ))
               ) : (
-                <p className="text-center text-white/60">
-                  No videos available.
-                </p>
+                <p className="text-center text-white/60">No videos available.</p>
               )}
             </motion.div>
           )}
