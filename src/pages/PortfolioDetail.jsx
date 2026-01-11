@@ -125,7 +125,7 @@ export default function PortfolioDetail() {
             muted
             playsInline
             className="w-full max-h-[235px] md:max-h-[620px] object-cover object-top md:object-center"
-            src={project.video}
+            src={project?.video[0]}
           />
 
           {/* Fullscreen Button */}
@@ -296,9 +296,8 @@ export default function PortfolioDetail() {
                     <div className="absolute -left-3 top-0 w-[22px] h-[22px] bg-white rounded-full"></div>
                     {/* Vertical line (below the dot, hidden on last) */}
                     <div
-                      className={`absolute left-[-2px] top-[22px] w-[2px] h-[calc(100%+3rem)] bg-white ${
-                        index === project.phases.length - 1 ? "hidden" : ""
-                      }`}
+                      className={`absolute left-[-2px] top-[22px] w-[2px] h-[calc(100%+3rem)] bg-white ${index === project.phases.length - 1 ? "hidden" : ""
+                        }`}
                     ></div>
                     {/* Content */}
                     <b>{item.title}</b> {item.desc}
