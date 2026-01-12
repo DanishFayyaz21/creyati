@@ -166,116 +166,134 @@ export default function PortfolioDetail() {
           {/* Gallery */}
           <div className="lg:col-span-9 grid gap-3">
             {/* Row 1: 3 images */}
+
             <div className="grid grid-cols-12 gap-3">
-              <div className="col-span-12 lg:col-span-5">
-                <img
-                  src={project.gallery[0]}
-                  alt="img-0"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
-                />
-              </div>
+              {project.gallery?.[0] && (
+                <div className="col-span-12 lg:col-span-5">
+                  <img
+                    src={project.gallery[0]}
+                    alt="img-0"
+                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                  />
+                </div>
+              )}
               <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
-                <img
-                  src={project.gallery[1]}
-                  alt="img-1"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
-                />
-                <img
-                  src={project.gallery[2]}
-                  alt="img-2"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
-                />
+                {project.gallery?.[1] && (
+                  <img
+                    src={project.gallery[1]}
+                    alt="img-1"
+                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                  />
+                )}
+
+                {project.gallery?.[2] && (
+                  <img
+                    src={project.gallery[2]}
+                    alt="img-2"
+                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                  />
+                )}
               </div>
             </div>
 
             {/* Row 2: 2 images */}
             <div className="grid grid-cols-12 gap-3">
-              <div className="col-span-6 lg:col-span-5">
-                <img
-                  src={project.gallery[3]}
-                  alt="img-4"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="col-span-6 lg:col-span-7">
-                <img
-                  src={project.gallery[4]}
-                  alt="img-5"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
-                />
-              </div>
+              {project.gallery?.[3] && (
+                <div className="col-span-6 lg:col-span-5">
+                  <img
+                    src={project.gallery[3]}
+                    alt="img-4"
+                    className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                  />
+                </div>
+              )}
+              {project.gallery?.[4] && (
+                <div className="col-span-6 lg:col-span-7">
+                  <img
+                    src={project.gallery[4]}
+                    alt="img-5"
+                    className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                  />
+                </div>
+              )}
             </div>
 
             {/* Row 3: 3 images */}
             <div className="grid grid-cols-12 gap-3">
               {/* Full-width image on md and up */}
-              <div className="col-span-12 lg:col-span-4">
-                <img
-                  src={project.gallery[5]}
-                  alt="img-6"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[400px] md:max-h-[300px] object-cover md:object-top"
-                />
-              </div>
+              {project.gallery?.[5] && (
+                <div className="col-span-12 lg:col-span-4">
+                  <img
+                    src={project.gallery[5]}
+                    alt="img-6"
+                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[400px] md:max-h-[300px] object-cover md:object-top"
+                  />
+                </div>
+              )}
 
               {/* Two side-by-side images */}
-              <div className="col-span-6 lg:col-span-4">
-                <img
-                  src={project.gallery[6]}
-                  alt="img-7"
-                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
-                />
-              </div>
-              <div
-                onClick={() => (window.location.href = `/media/${slug}`)}
-                className="
+              {project.gallery?.[6] && (
+                <div className="col-span-6 lg:col-span-4">
+                  <img
+                    src={project.gallery[6]}
+                    alt="img-7"
+                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
+                  />
+                </div>
+              )}
+              {project.gallery?.length > 0 && (
+                <div
+                  onClick={() => (window.location.href = `/media/${slug}`)}
+                  className="
     group
     col-span-6 lg:col-span-4 
     relative rounded-lg lg:rounded-[25px] 
     overflow-hidden max-h-[300px] 
     cursor-pointer
   "
-              >
-                <AnimatePresence mode="wait">
-                  <motion.img
-                    key={activeImageIndex}
-                    src={project.gallery[activeImageIndex]}
-                    alt="animated-gallery"
-                    initial={{ opacity: 0, scale: 1.05 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.98 }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
-                    className="w-full h-full max-h-[300px] object-cover object-top absolute inset-0"
-                  />
-                </AnimatePresence>
-                <div
-                  className="
+                >
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={activeImageIndex}
+                      src={project.gallery[activeImageIndex]}
+                      alt="animated-gallery"
+                      initial={{ opacity: 0, scale: 1.05 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.98 }}
+                      transition={{ duration: 0.8, ease: "easeInOut" }}
+                      className="w-full h-full max-h-[300px] object-cover object-top absolute inset-0"
+                    />
+                  </AnimatePresence>
+                  <div
+                    className="
       absolute inset-0 z-20 
       flex items-center justify-center 
       bg-gray-900/70 
       transition-colors duration-300
       group-hover:bg-gray-900/80
     "
-                >
-                  <span
-                    className="
+                  >
+                    <span
+                      className="
         text-white 
         text-xs sm:text-sm md:text-base 
         font-semibold uppercase tracking-widest
         relative
       "
-                  >
-                    Show More
-                    <span
-                      className="
+                    >
+                      Show More
+                      <span
+                        className="
           absolute left-0 -bottom-1
           w-0 h-[1px] bg-white
           transition-all duration-300
           group-hover:w-full
         "
-                    />
-                  </span>
+                      />
+                    </span>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
           <div className="lg:col-span-3">
@@ -296,8 +314,9 @@ export default function PortfolioDetail() {
                     <div className="absolute -left-3 top-0 w-[22px] h-[22px] bg-white rounded-full"></div>
                     {/* Vertical line (below the dot, hidden on last) */}
                     <div
-                      className={`absolute left-[-2px] top-[22px] w-[2px] h-[calc(100%+3rem)] bg-white ${index === project.phases.length - 1 ? "hidden" : ""
-                        }`}
+                      className={`absolute left-[-2px] top-[22px] w-[2px] h-[calc(100%+3rem)] bg-white ${
+                        index === project.phases.length - 1 ? "hidden" : ""
+                      }`}
                     ></div>
                     {/* Content */}
                     <b>{item.title}</b> {item.desc}
