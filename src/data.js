@@ -132,6 +132,12 @@ export const siteData = {
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
       },
+      {
+        name: "Biks Cafe ",
+        slug: "biks-cafe",
+        category: "Category Name",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+      },
     ],
   },
 
@@ -840,6 +846,7 @@ export const siteData = {
         client: " Non Alcoholic Beverage ",
         timeline: "Completed",
         deliverables: ["Brand Integration", " ,", "Video", " ,", "Still"],
+        deliverables: ["Brand Integration", " ,", "Video", " ,", "Still"],
         ourWork:
           "Lyre's partnered with Creyeti as part of Cerroni's SS26 campaign to integrate the brand into a refined, European inspired lifestyle narrative naturally and without overt product placement.",
         campaign: " ",
@@ -934,7 +941,6 @@ export const siteData = {
           "Created visually compelling content that drives discovery and engagement",
           "Established consistent, elevated visual identity across all platforms ",
           "Delivered versatile assets for sustained marketing and growth",
-
         ],
         gallery: [
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8228.jpg",
@@ -947,8 +953,75 @@ export const siteData = {
         results: "",
         timelime: "",
         stage: "",
-        stageDetail:
-          "",
+        stageDetail: "",
+        // phases: [
+        //   {
+        //     id: "1",
+        //     title: "Phase 1 –",
+        //     desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
+        //   },
+        //   {
+        //     id: "2",
+        //     title: "Phase 2 –",
+        //     desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
+        //   },
+        //   {
+        //     id: "3",
+        //     title: "Phase 3 –",
+        //     desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
+        //   },
+        //   {
+        //     id: "4",
+        //     title: "Phase 4 –",
+        //     desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
+        //   },
+        // ],
+      },
+
+      {
+        id: 11,
+        slug: "biks-cafe",
+        logo: "",
+        category: "",
+        title: "BIKS CAFE",
+        video: [],
+        client: ["Hospitality", " ,", " Cafe"],
+        timeline: "Completed",
+        deliverables: ["Video", "Still"],
+        ourWork:
+          "Biks Cafe had a strong offering but lacked the visual assets to communicate it effectively. In hospitality, appetite is visual without premium imagery, even the best cafes struggle to convert attention into foot traffic. ",
+        campaign: "",
+        typeOfWork: [
+          "Content Production – Premium food, lifestyle, and space-focused imagery.",
+          "Visual Direction – Elevated yet approachable brand-led aesthetics.",
+          "Photography & Motion – Scroll-stopping social-first content.",
+          "Lifestyle Brand Positioning – Treating Biks as a destination, not just a venue.",
+        ],
+
+        deliverablesDetail: [
+          "Premium food and beverage photography",
+          "Lifestyle and environment stills",
+          "High-quality motion content for Reels and Stories ",
+          
+        ],
+        resultsDetail: [
+          "Elevated brand perception across digital touchpoints",
+          "Created scroll-stopping content that drives engagement and foot traffic",
+          "Built sustainable content library for long-term marketing use ",
+          
+        ],
+        gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8228.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8269.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5114.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5156.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5203.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5209.jpg",
+        ],
+        results: "",
+        timelime: "",
+        stage: "",
+        stageDetail: "",
         // phases: [
         //   {
         //     id: "1",
