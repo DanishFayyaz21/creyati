@@ -6,6 +6,7 @@ import { ArrowsPointingOutIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PortfolioNavigation from "../components/work/PortfolioNavigation";
+import { Link } from "react-router-dom";
 
 export default function PortfolioDetail() {
   const { slug } = useParams();
@@ -118,30 +119,30 @@ export default function PortfolioDetail() {
           className="rounded-2xl w-full max-h-[620px] object-cover mb-10"
         /> */}
         {project?.video[0] && (
-        <div className="rounded-2xl overflow-hidden mb-10 relative">
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full max-h-[235px] md:max-h-[620px] object-cover object-top md:object-center"
-            src={project?.video[0]}
-          />
+          <div className="rounded-2xl overflow-hidden mb-10 relative">
+            <video
+              ref={videoRef}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full max-h-[235px] md:max-h-[620px] object-cover object-top md:object-center"
+              src={project?.video[0]}
+            />
 
-          {/* Fullscreen Button */}
-          <button
-            onClick={toggleFullscreen}
-            className="absolute bottom-4 right-4 z-10 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20 hover:border-white/40 group"
-            aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
-          >
-            {isFullscreen ? (
-              <XMarkIcon className="w-6 h-6 group-hover:scale-110 transition-transform duration-200" />
-            ) : (
-              <ArrowsPointingOutIcon className="w-6 h-6 group-hover:scale-110 transition-transform duration-200" />
-            )}
-          </button>
-        </div>
+            {/* Fullscreen Button */}
+            <button
+              onClick={toggleFullscreen}
+              className="absolute bottom-4 right-4 z-10 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20 hover:border-white/40 group"
+              aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+            >
+              {isFullscreen ? (
+                <XMarkIcon className="w-6 h-6 group-hover:scale-110 transition-transform duration-200" />
+              ) : (
+                <ArrowsPointingOutIcon className="w-6 h-6 group-hover:scale-110 transition-transform duration-200" />
+              )}
+            </button>
+          </div>
         )}
 
         {/* Work Section */}
@@ -244,8 +245,8 @@ export default function PortfolioDetail() {
                 </div>
               )}
               {project.gallery?.length > 0 && (
-                <div
-                  onClick={() => (window.location.href = `/media/${slug}`)}
+                <Link
+                  to={`/media/${slug}`}
                   className="
     group
     col-span-6 lg:col-span-4 
@@ -294,7 +295,7 @@ export default function PortfolioDetail() {
                       />
                     </span>
                   </div>
-                </div>
+                </Link>
               )}
             </div>
           </div>
@@ -316,9 +317,8 @@ export default function PortfolioDetail() {
                     <div className="absolute -left-3 top-0 w-[22px] h-[22px] bg-white rounded-full"></div>
                     {/* Vertical line (below the dot, hidden on last) */}
                     <div
-                      className={`absolute left-[-2px] top-[22px] w-[2px] h-[calc(100%+3rem)] bg-white ${
-                        index === project.phases.length - 1 ? "hidden" : ""
-                      }`}
+                      className={`absolute left-[-2px] top-[22px] w-[2px] h-[calc(100%+3rem)] bg-white ${index === project.phases.length - 1 ? "hidden" : ""
+                        }`}
                     ></div>
                     {/* Content */}
                     <b>{item.title}</b> {item.desc}
