@@ -1,8 +1,48 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { siteData } from "../../data";
 import { Link } from "react-router-dom";
 import ArrowblackBtn from "../../assets/images/arrow-black.svg";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
+
+function ImageSlideshow({ images, className }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  if (!images || images.length === 0) return null;
+
+  return (
+    <div className={`relative overflow-hidden ${className}`}>
+      {images.map((img, index) => (
+        <img
+          key={index}
+          src={img}
+          alt={`slide-${index}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out ${
+            index === currentIndex 
+              ? "opacity-70 scale-110 animate-[zoomIn_4s_ease-out_forwards]" 
+              : "opacity-0 scale-100"
+          }`}
+          style={{
+            animation: index === currentIndex ? 'zoomIn 4s ease-out forwards' : 'none'
+          }}
+        />
+      ))}
+      <style>{`
+        @keyframes zoomIn {
+          from { transform: scale(1); }
+          to { transform: scale(1.15); }
+        }
+      `}</style>
+    </div>
+  );
+}
 
 export default function PortfolioSection() {
   const { categories, projects } = siteData.portfolio;
@@ -72,14 +112,23 @@ export default function PortfolioSection() {
                 to={`/portfolio/${project.slug}`}
                 className="relative rounded-2xl overflow-hidden block"
               >
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-80 object-cover"
-                  src={project?.video[0]}
-                />
+                {project?.video && project.video.length > 0 ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-80 object-cover"
+                    src={project.video[0]}
+                  />
+                ) : project?.gallery && project.gallery.length > 0 ? (
+                  <ImageSlideshow
+                    images={project.gallery}
+                    className="w-full h-80"
+                  />
+                ) : (
+                  <div className="w-full h-80 bg-gray-800" />
+                )}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
                     src={project.logo}
