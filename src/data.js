@@ -96,12 +96,12 @@ export const siteData = {
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+45.png",
       },
-      {
-        name: "MILIDAY",
-        slug: "miliday",
-        category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+46.png",
-      },
+      // {
+      //   name: "MILIDAY",
+      //   slug: "miliday",
+      //   category: "Category Name",
+      //   img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+46.png",
+      // },
       {
         name: "HARPAH",
         slug: "harpah",
@@ -142,7 +142,7 @@ export const siteData = {
         name: "SO FRESH",
         slug: "so-fresh",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
       },
     ],
   },
@@ -813,37 +813,37 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/bk21_v2.jpg",
         ],
         results: "",
-        timelime: "",
-        stage: "",
-        stageDetail: "",
-        // phases: [
-        //   {
-        //     id: "1",
-        //     title: "Phase 1 – Discovery & Strategy",
-        //     desc: "Understood Harpa’h’s vision and target audience. Defined content pillars: eCommerce, lifestyle, and social media. Strategy: To position Harpa’h as a luxury fashion brand with stronger digital presence.",
-        //   },
-        //   {
-        //     id: "2",
-        //     title: "Phase 2 –",
-        //     desc: "Delivered lookbooks for new collections, Shot eCommerce-ready photography and campaign visuals. Produced lifestyle photography and campaign visuals. Created reel and short-form social content. Shot in both studio and on-location settings",
-        //   },
-        //   {
-        //     id: "3",
-        //     title: "Phase 3 –",
-        //     desc: "Rolled out content across social media platforms. Engaged influencers and repost strategy for brand awareness. Built consistent brand voice across digital touchpoints",
-        //   },
-        //   {
-        //     id: "4",
-        //     title: "Phase 4 –",
-        //     desc: "Increase in followers and digital reach. Higher engagement across social channels. More website traffic and stronger eCommerce presentation. Strengthened brand positioning in the fashion market",
-        //   },
-        // ],
+        timelime: "TIMELIME OF THE PROJECT",
+        stage: "Pre-Campaign (Baseline) ",
+        stageDetail: " Blue Ribbons had steady sales but fragmented marketing, inconsistent visuals, and weak online presence. The team managed marketing internally, reducing focus on sales.  ",
+        phases: [
+          {
+            id: "1",
+            title: "Phase 1 – Strategy & Reset  ",
+            desc: "Mapped their market and sales process. Defined agent-led branding strategy with Ven as the core asset. Established content pillars and removed all marketing loads from the team.  ",
+          },
+          {
+            id: "2",
+            title: "Phase 2 – Brand & Production",
+            desc: "Executed complete visual upgrade. Launched weekly shoots for agent content, listings, and social storytelling. Delivered brochures, boards, and signage with unified look and tone.  ",
+          },
+          {
+            id: "3",
+            title: "Phase 3 – Rollout & Backend",
+            desc: "Rolled out structured Instagram content for constant visibility. Took full ownership of planning, production, and publishing. Blue Ribbons focused entirely on sales and closings.  ",
+          },
+          {
+            id: "4",
+            title: "Phase 4 – Growth",
+            desc: "Brand perception and market positioning improved measurably. Online presence strengthened, recognition increased, and revenue rose by a minimum of 30%.",
+          },
+        ],
       },
 
       {
         id: 9,
         slug: "lyres",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/Logo-Lyres.webp",
         category: "",
         title: "Lyres",
         video: [
@@ -920,7 +920,7 @@ export const siteData = {
       {
         id: 10,
         slug: "lavanna",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+43.png",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/Logo-Lavanna.png",
         category: "",
         title: "LAVANNA",
         video: [],
@@ -988,7 +988,7 @@ export const siteData = {
       {
         id: 11,
         slug: "biks-cafe",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/Logo-BiksCafe.png",
         category: "",
         title: "BIKS CAFE",
         video: [],
@@ -1064,7 +1064,10 @@ export const siteData = {
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
         category: "",
         title: "So Fresh",
-        video: [],
+        video: [ 
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/17+(1).mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/SALON+AND+SPA+text1+(1).mp4",
+        ],
         client: ["B2B Supplier ", " ,", " Food & Beverage "],
         timeline: "Completed",
         deliverables: ["Brand Strategy ", "Repositioning", "Video", "Paid Advertising "],
@@ -1096,19 +1099,16 @@ export const siteData = {
           "Built foundation allowing founder to focus on growth and partnerships",
         ],
         gallery: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A8228.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/3.png",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9255-2+(1).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/4.png",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9386-2+(1).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5.png",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9444+(1).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5+(1).png",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9470+(1).jpg",
-
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9481-Edit_(2)done+(1).jpg",
         ],
         results: "",
         timelime: "",
