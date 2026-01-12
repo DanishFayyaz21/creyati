@@ -136,7 +136,7 @@ export const siteData = {
         name: "Biks Cafe ",
         slug: "biks-cafe",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
       },
     ],
   },
@@ -976,7 +976,7 @@ export const siteData = {
       {
         id: 11,
         slug: "biks-cafe",
-        logo: "",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
         category: "",
         title: "BIKS CAFE",
         video: [],
@@ -997,21 +997,26 @@ export const siteData = {
           "Premium food and beverage photography",
           "Lifestyle and environment stills",
           "High-quality motion content for Reels and Stories ",
-          
         ],
         resultsDetail: [
           "Elevated brand perception across digital touchpoints",
           "Created scroll-stopping content that drives engagement and foot traffic",
           "Built sustainable content library for long-term marketing use ",
-          
         ],
         gallery: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8228.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8269.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5114.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5156.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5203.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5209.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A8228.jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9255-2+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9386-2+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9444+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9470+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9481-Edit_(2)done+(1).jpg",
         ],
         results: "",
         timelime: "",

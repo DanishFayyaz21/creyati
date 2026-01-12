@@ -117,6 +117,7 @@ export default function PortfolioDetail() {
           alt={project.title}
           className="rounded-2xl w-full max-h-[620px] object-cover mb-10"
         /> */}
+        {project?.video[0] && (
         <div className="rounded-2xl overflow-hidden mb-10 relative">
           <video
             ref={videoRef}
@@ -141,6 +142,7 @@ export default function PortfolioDetail() {
             )}
           </button>
         </div>
+        )}
 
         {/* Work Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 mb-10">
