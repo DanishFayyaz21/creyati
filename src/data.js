@@ -126,6 +126,12 @@ export const siteData = {
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/Kellyville_Twilight.jpg",
       },
+       {
+        name: "Lyres ",
+        slug: "lyres",
+        category: "Category Name",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+      },
     ],
   },
 
@@ -785,6 +791,78 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/bk23.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/bk5_v2.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/bk21_v2.jpg",
+
+        ],
+        results: "",
+        timelime: "",
+        stage: "",
+        stageDetail:
+          "",
+        // phases: [
+        //   {
+        //     id: "1",
+        //     title: "Phase 1 – Discovery & Strategy",
+        //     desc: "Understood Harpa’h’s vision and target audience. Defined content pillars: eCommerce, lifestyle, and social media. Strategy: To position Harpa’h as a luxury fashion brand with stronger digital presence.",
+        //   },
+        //   {
+        //     id: "2",
+        //     title: "Phase 2 –",
+        //     desc: "Delivered lookbooks for new collections, Shot eCommerce-ready photography and campaign visuals. Produced lifestyle photography and campaign visuals. Created reel and short-form social content. Shot in both studio and on-location settings",
+        //   },
+        //   {
+        //     id: "3",
+        //     title: "Phase 3 –",
+        //     desc: "Rolled out content across social media platforms. Engaged influencers and repost strategy for brand awareness. Built consistent brand voice across digital touchpoints",
+        //   },
+        //   {
+        //     id: "4",
+        //     title: "Phase 4 –",
+        //     desc: "Increase in followers and digital reach. Higher engagement across social channels. More website traffic and stronger eCommerce presentation. Strengthened brand positioning in the fashion market",
+        //   },
+        // ],
+      },
+
+       {
+        id: 9,
+        slug: "lyres",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+        category: "",
+        title: "Lyres",
+        video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/SCN_5_Reception+(Resolve)+(Resolve).mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/SCN_19_Bourbon.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/1.NEWSPAPER_WEB-READY.mp4",
+        ],
+        client: " Non Alcoholic Beverage ",
+        timeline: "Completed",
+        deliverables: ["Brand Integration", "Video", "Still"],
+        ourWork:
+          "",
+        campaign: " ",
+        typeOfWork: [
+          "",
+        ],
+
+        deliverablesDetail: [
+          "",
+        ],
+        resultsDetail: [
+          "",
+        ],
+        gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05356.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05235.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06366_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05224.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06717.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06506.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05237.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06131.jpg",
+          
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05328.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06105.jpg",
+
 
         ],
         results: "",
