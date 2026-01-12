@@ -332,7 +332,7 @@ export const siteData = {
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/cerroni.png",
         category: "Fashion",
         title: "Cerroni",
-        video: ["https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/cerroni+video.mp4"],
+        video: ["https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/cerroni%2Bvideo+(1).mp4"],
         client: "Fashion brand",
         timeline: "Completed",
         deliverables: ["Videos", "Stills", "Graphics & Ads"],
@@ -742,9 +742,12 @@ export const siteData = {
         category: "Real Estate",
         title: "Blue Ribbons",
         video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/01_BR_Kellyville_+Property_Video.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/real+estate+3+final.mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/Grima+street+with+new+outro.mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/141+Merindah+Rd+1.3.mp4",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/01_BR_Kellyville_+Property_Video.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/BR_KELLYVILLE_D1.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/plot+final.mp4",
         ],
         client: "Real Estate Agency",
         timeline: "Completed",
@@ -836,7 +839,7 @@ export const siteData = {
         ],
         client: " Non Alcoholic Beverage ",
         timeline: "Completed",
-        deliverables: ["Brand Integration", " ," , "Video", " ," , "Still"],
+        deliverables: ["Brand Integration", " ,", "Video", " ,", "Still"],
         ourWork:
           "Lyre's partnered with Creyeti as part of Cerroni's SS26 campaign to integrate the brand into a refined, European inspired lifestyle narrative naturally and without overt product placement.",
         campaign: " ",
@@ -906,7 +909,7 @@ export const siteData = {
         category: "",
         title: "LAVANNA",
         video: [],
-        client: ["Hospitality", " ," ," Restaurant"],
+        client: ["Hospitality", " ,", " Restaurant"],
         timeline: "Completed",
         deliverables: ["Video", "Still"],
         ourWork:
@@ -924,14 +927,14 @@ export const siteData = {
           "Atmospheric space and lifestyle imagery ",
           "High-quality motion content for social and digital platforms ",
           "Comprehensive visual library for marketing and brand use",
-          
+
         ],
         resultsDetail: [
           "Strengthened brand positioning within the premium hospitality space",
           "Created visually compelling content that drives discovery and engagement",
           "Established consistent, elevated visual identity across all platforms ",
           "Delivered versatile assets for sustained marketing and growth",
-          
+
         ],
         gallery: [
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8228.jpg",
