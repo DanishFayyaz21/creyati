@@ -990,7 +990,7 @@ export const siteData = {
         id: 11,
         slug: "biks-cafe",
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/Logo-BiksCafe.png",
-        category: "",
+        category: " ",
         title: "BIKS CAFE",
         video: [],
         client: ["Hospitality", " ,", " Cafe"],
