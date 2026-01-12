@@ -1038,23 +1038,23 @@ export const siteData = {
         phases: [
           {
             id: "1",
-            title: "Phase 1 –",
-            desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
+            title: "Phase 1 – Discovery & Visual Strategy  ",
+            desc: "Understood Biks' brand identity and customer experience. Defined content approach: treat the cafe like a lifestyle brand with food as hero, atmosphere as story, and space as destination.  ",
           },
           {
             id: "2",
-            title: "Phase 2 –",
-            desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
+            title: "Phase 2 – Production  ",
+            desc: "Delivered premium photography of food and beverages with meticulous styling and lighting. Shot lifestyle and environment stills capturing the energy and warmth of the space. Created high-quality motion content for Reels and Stories. ",
           },
           {
             id: "3",
-            title: "Phase 3 –",
-            desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
+            title: "Phase 3 – Content Library Development  ",
+            desc: "Built comprehensive visual library with versatile assets for ongoing digital use.Ensured all content felt elevated yet approachable the kind that drives saves, shares, and visits. ",
           },
           {
             id: "4",
-            title: "Phase 4 –",
-            desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
+            title: "Phase 4 – Digital Rollout ",
+            desc: "Content deployed across social platforms. Elevated brand perception and visual identity. Created scroll-stopping content that drives engagement and converts attention into foot traffic. ",
           },
         ],
       },
@@ -1062,7 +1062,7 @@ export const siteData = {
       {
         id: 12,
         slug: "so-fresh",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-02.png",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-03.png",
         category: "",
         title: "So Fresh",
         video: [
