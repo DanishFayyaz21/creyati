@@ -901,11 +901,11 @@ export const siteData = {
 
       {
         id: 10,
-        slug: "lavanaa",
+        slug: "lavanna",
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+43.png",
         category: "",
         title: "LAVANNA",
-        video: [""],
+        video: [],
         client: ["Hospitality", " ," ," Restaurant"],
         timeline: "Completed",
         deliverables: ["Video", "Still"],
@@ -941,33 +941,33 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5203.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5209.jpg",
         ],
-        results: "Boosted tourism engagement and social media visibility.",
-        timelime: "TIMELIME OF THE PROJECT",
-        stage: "Early Stage",
+        results: "",
+        timelime: "",
+        stage: "",
         stageDetail:
-          "Barber Industries was growing with new stores being opened and customers walking in. But online? The brand wasn’t telling its story. Content felt inconsistent, the connection with the audience wasn’t strong enough, and the essence of the barbershop experience was slowly getting lost.",
-        phases: [
-          {
-            id: "1",
-            title: "Phase 1 –",
-            desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
-          },
-          {
-            id: "2",
-            title: "Phase 2 –",
-            desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
-          },
-          {
-            id: "3",
-            title: "Phase 3 –",
-            desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
-          },
-          {
-            id: "4",
-            title: "Phase 4 –",
-            desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
-          },
-        ],
+          "",
+        // phases: [
+        //   {
+        //     id: "1",
+        //     title: "Phase 1 –",
+        //     desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
+        //   },
+        //   {
+        //     id: "2",
+        //     title: "Phase 2 –",
+        //     desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
+        //   },
+        //   {
+        //     id: "3",
+        //     title: "Phase 3 –",
+        //     desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
+        //   },
+        //   {
+        //     id: "4",
+        //     title: "Phase 4 –",
+        //     desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
+        //   },
+        // ],
       },
     ],
   },
