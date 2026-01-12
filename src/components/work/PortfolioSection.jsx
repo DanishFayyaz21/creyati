@@ -78,7 +78,7 @@ export default function PortfolioSection() {
                   muted
                   playsInline
                   className="w-full h-80 object-cover"
-                  src={project.video}
+                  src={project?.video[0]}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
