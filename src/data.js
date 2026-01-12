@@ -121,25 +121,25 @@ export const siteData = {
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+49.png",
       },
       {
-        name: "Blue Ribbons ",
+        name: "BLUE RIBBONS",
         slug: "blue-ribbons",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/Kellyville_Twilight.jpg",
       },
       {
-        name: "Lyres ",
+        name: "LYRES",
         slug: "lyres",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
       },
       {
-        name: "Biks Cafe ",
+        name: "BIKS CAFE",
         slug: "biks-cafe",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
       },
       {
-        name: "So Fresh ",
+        name: "SO FRESH",
         slug: "so-fresh",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
@@ -344,7 +344,9 @@ export const siteData = {
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/cerroni.png",
         category: "Fashion",
         title: "Cerroni",
-        video: ["https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/cerroni%2Bvideo+(1).mp4"],
+        video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/cerroni%2Bvideo+(1).mp4",
+        ],
         client: "Fashion brand",
         timeline: "Completed",
         deliverables: ["Videos", "Stills", "Graphics & Ads"],
@@ -940,7 +942,6 @@ export const siteData = {
           "Atmospheric space and lifestyle imagery ",
           "High-quality motion content for social and digital platforms ",
           "Comprehensive visual library for marketing and brand use",
-
         ],
         resultsDetail: [
           "Strengthened brand positioning within the premium hospitality space",
