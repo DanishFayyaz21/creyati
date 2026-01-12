@@ -92,7 +92,7 @@ export const siteData = {
       },
       {
         name: "CARBNITE",
-        slug: "carbnite",
+        slug: "carbinite",
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/CAPABILITIES/Rectangle+45.png",
       },
