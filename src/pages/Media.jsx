@@ -34,7 +34,7 @@ export default function Media() {
           />
         </div>
 
-        <div className="flex justify-center gap-6 mb-14 flex-wrap">
+        <div className="flex justify-center gap-6 mb-14 flex-wrap sticky top-28 z-10">
           {["still", "video"].map((tab) => {
             const isActive = activeTab === tab;
 
