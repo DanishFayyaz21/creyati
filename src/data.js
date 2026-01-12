@@ -126,7 +126,7 @@ export const siteData = {
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/Kellyville_Twilight.jpg",
       },
-       {
+      {
         name: "Lyres ",
         slug: "lyres",
         category: "Category Name",
@@ -791,13 +791,11 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/bk23.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/bk5_v2.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/bk21_v2.jpg",
-
         ],
         results: "",
         timelime: "",
         stage: "",
-        stageDetail:
-          "",
+        stageDetail: "",
         // phases: [
         //   {
         //     id: "1",
@@ -822,7 +820,7 @@ export const siteData = {
         // ],
       },
 
-       {
+      {
         id: 9,
         slug: "lyres",
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
@@ -837,17 +835,24 @@ export const siteData = {
         timeline: "Completed",
         deliverables: ["Brand Integration", "Video", "Still"],
         ourWork:
-          "",
+          "Lyre's partnered with Creyeti as part of Cerroni's SS26 campaign to integrate the brand into a refined, European-inspired lifestyle narrative—naturally and without overt product placement.",
         campaign: " ",
         typeOfWork: [
-          "",
+          "Editorial Content Production – Lifestyle-led scenes and intimate moments.",
+          "Cinematic Product Photography – Carefully framed shots with emphasis on light and environment.",
+          "Visual Direction – Cohesive styling, atmosphere, and narrative flow.",
+          "Brand Integration – Seamless, story-driven product presence.",
         ],
-
         deliverablesDetail: [
-          "",
+          "Campaign-ready lifestyle content with organic brand integration ",
+          "Cinematic video scenes featuring Lyre's within SS26 narratives ",
+          "Premium still imagery for collaborative use ",
         ],
         resultsDetail: [
-          "",
+          "Developed refined content library prepared for rollout",
+          "Positioned Lyre's within premium, fashion-forward lifestyle context",
+          "Created versatile assets for long-term digital use",
+          "Demonstrated narrative-led brand integration without traditional advertising",
         ],
         gallery: [
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05356.jpg",
@@ -859,17 +864,14 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06506.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05237.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06131.jpg",
-          
+
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05328.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06105.jpg",
-
-
         ],
         results: "",
         timelime: "",
         stage: "",
-        stageDetail:
-          "",
+        stageDetail: "",
         // phases: [
         //   {
         //     id: "1",
