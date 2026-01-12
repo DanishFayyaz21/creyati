@@ -136,7 +136,13 @@ export const siteData = {
         name: "Biks Cafe ",
         slug: "biks-cafe",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+      },
+      {
+        name: "So Fresh ",
+        slug: "so-fresh",
+        category: "Category Name",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
       },
     ],
   },
@@ -981,7 +987,7 @@ export const siteData = {
       {
         id: 11,
         slug: "biks-cafe",
-        logo: "",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
         category: "",
         title: "BIKS CAFE",
         video: [],
@@ -1002,21 +1008,106 @@ export const siteData = {
           "Premium food and beverage photography",
           "Lifestyle and environment stills",
           "High-quality motion content for Reels and Stories ",
-          
         ],
         resultsDetail: [
           "Elevated brand perception across digital touchpoints",
           "Created scroll-stopping content that drives engagement and foot traffic",
           "Built sustainable content library for long-term marketing use ",
-          
         ],
         gallery: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8228.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/0J3A8269.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5114.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5156.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5203.jpg",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5209.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A8228.jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9255-2+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9386-2+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9444+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9470+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9481-Edit_(2)done+(1).jpg",
+        ],
+        results: "",
+        timelime: "",
+        stage: "",
+        stageDetail: "",
+        // phases: [
+        //   {
+        //     id: "1",
+        //     title: "Phase 1 –",
+        //     desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
+        //   },
+        //   {
+        //     id: "2",
+        //     title: "Phase 2 –",
+        //     desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
+        //   },
+        //   {
+        //     id: "3",
+        //     title: "Phase 3 –",
+        //     desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
+        //   },
+        //   {
+        //     id: "4",
+        //     title: "Phase 4 –",
+        //     desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
+        //   },
+        // ],
+      },
+
+      {
+        id: 12,
+        slug: "so-fresh",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+        category: "",
+        title: "So Fresh",
+        video: [],
+        client: ["B2B Supplier ", " ,", " Food & Beverage "],
+        timeline: "Completed",
+        deliverables: ["Brand Strategy ", "Repositioning", "Video", "Paid Advertising "],
+        ourWork:
+          "So Fresh came to Creyeti at inception one product, zero sales, operating B2C with no traction. Our objective was to identify a viable growth pathway, reposition the brand for scale, and build a foundation for consistent revenue and market relevance.",
+        campaign: "",
+        typeOfWork: [
+          "Brand Strategy & Repositioning – B2C to B2B market pivot.",
+          "Brand Identity & Packaging Design – Supplier-ready systems.",
+          "Personal Branding – Founder-led positioning through video.",
+          "Content Production – Premium video and visual assets.",
+          "Paid Media Strategy – Targeted B2B acquisition campaigns.",
+          "Product & Business Expansion – Custom-branded packaging rollout.",
+        ],
+
+        deliverablesDetail: [
+          "Business model repositioning from B2C to B2B ",
+          "Branding and packaging redesign for supplier markets ",
+          "Founder-led personal branding strategy  ",
+          "Premium video content production",
+          "Paid advertising strategy and execution ",
+          "Custom packaging strategy for B2B clients ",
+        ],
+        resultsDetail: [
+          "Transformed from zero-sales startup to functioning B2B supplier",
+          "Unlocked scalable revenue through custom-branded packaging ",
+          "Expanded product range from one to three products  ",
+          "Established credible supplier brand across Australia ",
+          "Built foundation allowing founder to focus on growth and partnerships",
+        ],
+        gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A8228.jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9255-2+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9386-2+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9444+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9470+(1).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9481-Edit_(2)done+(1).jpg",
         ],
         results: "",
         timelime: "",
