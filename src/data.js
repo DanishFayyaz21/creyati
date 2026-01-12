@@ -815,7 +815,8 @@ export const siteData = {
         results: "",
         timelime: "TIMELIME OF THE PROJECT",
         stage: "Pre-Campaign (Baseline) ",
-        stageDetail: " Blue Ribbons had steady sales but fragmented marketing, inconsistent visuals, and weak online presence. The team managed marketing internally, reducing focus on sales.  ",
+        stageDetail:
+          " Blue Ribbons had steady sales but fragmented marketing, inconsistent visuals, and weak online presence. The team managed marketing internally, reducing focus on sales.  ",
         phases: [
           {
             id: "1",
@@ -854,7 +855,6 @@ export const siteData = {
         client: " Non Alcoholic Beverage ",
         timeline: "Completed",
         deliverables: ["Brand Integration", " ,", "Video", " ,", "Still"],
-        deliverables: ["Brand Integration", " ,", "Video", " ,", "Still"],
         ourWork:
           "Lyre's partnered with Creyeti as part of Cerroni's SS26 campaign to integrate the brand into a refined, European inspired lifestyle narrative naturally and without overt product placement.",
         campaign: " ",
@@ -889,32 +889,33 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05328.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06105.jpg",
         ],
-        results: "",
-        timelime: "",
-        stage: "",
-        stageDetail: "",
-        // phases: [
-        //   {
-        //     id: "1",
-        //     title: "Phase 1 – Discovery & Strategy",
-        //     desc: "Understood Harpa’h’s vision and target audience. Defined content pillars: eCommerce, lifestyle, and social media. Strategy: To position Harpa’h as a luxury fashion brand with stronger digital presence.",
-        //   },
-        //   {
-        //     id: "2",
-        //     title: "Phase 2 –",
-        //     desc: "Delivered lookbooks for new collections, Shot eCommerce-ready photography and campaign visuals. Produced lifestyle photography and campaign visuals. Created reel and short-form social content. Shot in both studio and on-location settings",
-        //   },
-        //   {
-        //     id: "3",
-        //     title: "Phase 3 –",
-        //     desc: "Rolled out content across social media platforms. Engaged influencers and repost strategy for brand awareness. Built consistent brand voice across digital touchpoints",
-        //   },
-        //   {
-        //     id: "4",
-        //     title: "Phase 4 –",
-        //     desc: "Increase in followers and digital reach. Higher engagement across social channels. More website traffic and stronger eCommerce presentation. Strengthened brand positioning in the fashion market",
-        //   },
-        // ],
+        results: " ",
+        timelime: " TIMELIME OF THE PROJECT",
+        stage: " Pre-Campaign (Baseline)",
+        stageDetail:
+          "Lyre's sought to integrate their brand into lifestyle content that aligned with their sophisticated, non-alcoholic positioning without traditional product placement. ",
+        phases: [
+          {
+            id: "1",
+            title: "Phase 1 – Strategic Integration Planning ",
+            desc: "Collaborated with Cerroni's SS26 campaign team to identify natural touchpoints for Lyre's within the narrative. Defined approach: subtlety over selling, atmosphere over advertising.",
+          },
+          {
+            id: "2",
+            title: "Phase 2 – Production  ",
+            desc: "Embedded Lyre's into editorial-style scenes during SS26 shoot days. Captured slow morning rituals, relaxed lifestyle settings, and intimate moments with the product treated cinematically.  ",
+          },
+          {
+            id: "3",
+            title: "Phase 3 – Post-Production & Asset Refinement ",
+            desc: "Refined all content to ensure visual harmony and narrative flow. Ensured Lyre's complemented the story rather than interrupting it, maintaining premium aesthetic across all assets.  ",
+          },
+          {
+            id: "4",
+            title: "Phase 4 – Content Delivery ",
+            desc: "Delivered campaign-ready lifestyle content with organic brand integration. Provided versatile assets prepared for long-term digital rollout and collaborative use.  ",
+          },
+        ],
       },
 
       {
@@ -1031,40 +1032,40 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9481-Edit_(2)done+(1).jpg",
         ],
         results: "",
-        timelime: "",
-        stage: "",
-        stageDetail: "",
-        // phases: [
-        //   {
-        //     id: "1",
-        //     title: "Phase 1 –",
-        //     desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
-        //   },
-        //   {
-        //     id: "2",
-        //     title: "Phase 2 –",
-        //     desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
-        //   },
-        //   {
-        //     id: "3",
-        //     title: "Phase 3 –",
-        //     desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
-        //   },
-        //   {
-        //     id: "4",
-        //     title: "Phase 4 –",
-        //     desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
-        //   },
-        // ],
+        timelime: " TIMELIME OF THE PROJECT",
+        stage: " Pre-Campaign (Baseline) ",
+        stageDetail: "Biks Cafe had a strong offering but lacked quality visual assets. Their existing content was inconsistent and didn't capture the quality of their food, space, or customer experience.  ",
+        phases: [
+          {
+            id: "1",
+            title: "Phase 1 –",
+            desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
+          },
+          {
+            id: "2",
+            title: "Phase 2 –",
+            desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
+          },
+          {
+            id: "3",
+            title: "Phase 3 –",
+            desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
+          },
+          {
+            id: "4",
+            title: "Phase 4 –",
+            desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
+          },
+        ],
       },
 
       {
         id: 12,
         slug: "so-fresh",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-02.png",
         category: "",
         title: "So Fresh",
-        video: [ 
+        video: [
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/17+(1).mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/SALON+AND+SPA+text1+(1).mp4",
         ],
@@ -1108,34 +1109,34 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5.png",
 
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5+(1).png",
-
         ],
         results: "",
-        timelime: "",
-        stage: "",
-        stageDetail: "",
-        // phases: [
-        //   {
-        //     id: "1",
-        //     title: "Phase 1 –",
-        //     desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
-        //   },
-        //   {
-        //     id: "2",
-        //     title: "Phase 2 –",
-        //     desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
-        //   },
-        //   {
-        //     id: "3",
-        //     title: "Phase 3 –",
-        //     desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
-        //   },
-        //   {
-        //     id: "4",
-        //     title: "Phase 4 –",
-        //     desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
-        //   },
-        // ],
+        timelime: " TIMELIME OF THE PROJECT",
+        stage: " Pre-Campaign (Baseline)",
+        stageDetail:
+          " So Fresh had one product, zero sales, and was operating B2C with no traction. The business model wasn't working and needed complete repositioning. ",
+        phases: [
+          {
+            id: "1",
+            title: "Phase 1 – Discovery & Strategic Repositioning  ",
+            desc: "Analyzed the market and identified B2B as the viable growth pathway. Repositioned So Fresh from consumer-facing to business supplier targeting hospitality, corporate, and bulk buyers.",
+          },
+          {
+            id: "2",
+            title: "Phase 2 – Brand Rebuild & Content Production  ",
+            desc: "Redesigned branding and packaging to meet supplier standards. Built founder-led personal branding around Ali. Produced premium video content to establish trust and credibility.  ",
+          },
+          {
+            id: "3",
+            title: "Phase 3 – Demand Generation & Product Expansion  ",
+            desc: "Ran targeted paid advertising focused on qualified business attention. Identified custom-branded packaging as high-margin opportunity. Expanded product range from one to three products.  ",
+          },
+          {
+            id: "4",
+            title: "Phase 4 – Growth & Partnerships",
+            desc: "Transformed So Fresh into a functioning B2B supplier with credible brand presence across Australia. Unlocked scalable revenue streams and built foundation for continued growth.  ",
+          },
+        ],
       },
     ],
   },
