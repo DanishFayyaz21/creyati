@@ -126,7 +126,7 @@ export const siteData = {
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/Kellyville_Twilight.jpg",
       },
-       {
+      {
         name: "Lyres ",
         slug: "lyres",
         category: "Category Name",
@@ -823,7 +823,7 @@ export const siteData = {
         // ],
       },
 
-       {
+      {
         id: 9,
         slug: "lyres",
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
@@ -860,7 +860,7 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06506.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05237.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06131.jpg",
-          
+
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC05328.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06105.jpg",
 
