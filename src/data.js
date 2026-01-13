@@ -1263,33 +1263,33 @@ export const siteData = {
           "Positioned Rabbana within culturally conscious, purpose-driven fashion space ",
         ],
         gallery: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9818.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_9818.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9943.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_9943.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9976.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_9976.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9982.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_9982.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0222_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0222_(2).jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0326.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0326.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0349.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0349.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0507.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0507.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0522_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0522_(2).jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0541_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0541_(2).jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0570.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0570.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_0607.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_0607.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9491_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_9491_(2).jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9507_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/NMS_9507_(2).jpg",
         ],
         results: "",
         timelime: " TIMELIME OF THE PROJECT",
