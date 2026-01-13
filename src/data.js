@@ -862,7 +862,7 @@ export const siteData = {
         ],
         client: " Non Alcoholic Beverage ",
         timeline: "Completed",
-        deliverables: ["Brand Integration", " ,", "Video", " ,", "Still"],
+        deliverables: ["Brand Integration", "Video", "Still"],
         ourWork:
           "Lyre's partnered with Creyeti as part of Cerroni's SS26 campaign to integrate the brand into a refined, European inspired lifestyle narrative naturally and without overt product placement.",
         campaign: " ",
@@ -967,31 +967,31 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/AMAN5209.jpg",
         ],
         results: "",
-        timelime: "",
-        stage: "",
-        stageDetail: "",
-        // phases: [
-        //   {
-        //     id: "1",
-        //     title: "Phase 1 –",
-        //     desc: "That’s when Creyeti stepped in. We started simply by asking ourselves a simple question – what makes a barbershop special? It’s not just the cut. It’s the laugh, the conversation, the trust, the connection between the barber and customer built in that chair. So instead of polished ads, we started focusing on creating content that showed the real heartbeat of Barber Industries.",
-        //   },
-        //   {
-        //     id: "2",
-        //     title: "Phase 2 –",
-        //     desc: "Our journey started by being involved directly with barbers and at barbershop. We heard their stories, their bond with their customers and was the inspiration we gathered when building mood boards for Barber Industries. With all these in our backend we started working on our scripts, shot lists, and storyboards and started our production. But the best part was our shoots didn’t feel like a production, but it felt more like stepping into the everyday vibe of ‘Barber Industries’.",
-        //   },
-        //   {
-        //     id: "3",
-        //     title: "Phase 3 –",
-        //     desc: "Published cinematic reels and narrative content across multiple platforms. Integrated both online (social media) and offline (posters, window branding) campaigns. Unified brand voice and visual style across all stores. Engaged audiences through authentic and personal narratives.",
-        //   },
-        //   {
-        //     id: "4",
-        //     title: "Phase 4 –",
-        //     desc: "The results spoke for themselves Followers grew and engagement spiked. Customers started walking in after seeing content online. The online brand experience finally matched the in-shop experience. Most importantly, Barber Industries built trust, belonging, and community.",
-        //   },
-        // ],
+        timelime: " TIMELIME OF THE PROJECT",
+        stage: "Pre-Campaign (Baseline) ",
+        stageDetail: "Lavanna had sophisticated offerings but their existing visual assets didn't reflect the experience they delivered. There was a disconnect between brand perception and reality.  ",
+        phases: [
+          {
+            id: "1",
+            title: "Phase 1 – Discovery & Creative Direction ",
+            desc: "Understood Lavanna's positioning and customer expectations. Defined visual language: refined, elevated, and intentional capturing not just what they serve, but the mood, craft, and care behind it.  ",
+          },
+          {
+            id: "2",
+            title: "Phase 2 – Production",
+            desc: "Shot premium food and beverage photography with meticulous attention to lighting, composition, and styling. Captured atmospheric space and lifestyle imagery showcasing environment and experience. Produced high-quality motion content for social platforms. ",
+          },
+          {
+            id: "3",
+            title: "Phase 3 – Visual Library Development ",
+            desc: "Refined all assets to ensure cohesive premium aesthetic. Built a comprehensive visual library for marketing and brand use across all digital touchpoints. ",
+          },
+          {
+            id: "4",
+            title: "Phase 4 – Launch & Brand Elevation",
+            desc: "Content deployed across platforms. Strengthened brand positioning within premium hospitality space. Established consistent, elevated visual identity that drives discovery and engagement.  ",
+          },
+        ],
       },
 
       {
