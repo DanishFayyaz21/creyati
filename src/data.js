@@ -760,7 +760,7 @@ export const siteData = {
       {
         id: 8,
         slug: "blue-ribbons",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/BR+Logo-Monochrome2+(1).png",
+        logo: " https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/blue-ribbon-logo.png",
         category: "Real Estate",
         title: "Blue Ribbons",
         video: [
@@ -929,7 +929,7 @@ export const siteData = {
       {
         id: 10,
         slug: "lavanna",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/Logo-Lavanna.png",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/lavana-logo.png",
         category: " Hospitality",
         title: "LAVANNA",
         video: [],
@@ -1234,7 +1234,7 @@ export const siteData = {
       {
         id: 14,
         slug: "rabbana",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-03.png",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/rabbana-logo.png",
         category: "Fashion",
         title: "Rabbana",
         video: [],
