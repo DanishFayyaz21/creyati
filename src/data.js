@@ -148,7 +148,7 @@ export const siteData = {
         name: "KAI AND CREAMS",
         slug: "kai-and-creams",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6001.jpg",
       },
     ],
   },
@@ -1151,12 +1151,10 @@ export const siteData = {
       {
         id: 13,
         slug: "kai-and-creams",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-03.png",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6734.jpg",
         category: "Food & Beverage",
         title: "Kai and Creams",
         video: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/17+(1).mp4",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/SALON+AND+SPA+text1+(1).mp4",
         ],
         client: [" Food & Beverage ", " ,", "  Ice Cream Brand "],
         timeline: "Completed",
@@ -1187,15 +1185,24 @@ export const siteData = {
           "Connected Filipino heritage with Australian coastal culture through visual language   ",
         ],
         gallery: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6737.jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/3.png",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6215_(2).jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/4.png",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A5946_(2).jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5.png",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A5921_(2).jpg",
 
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5+(1).png",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6035.jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6686_(3).jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6274_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6315_(4).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6734.jpg",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A5930_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6001.jpg",
         ],
         results: "",
         timelime: " TIMELIME OF THE PROJECT",
@@ -1249,13 +1256,11 @@ export const siteData = {
           "Launch lookbook photography ",
           "Brand identity visual content ",
           "Culturally rooted campaign imagery ",
-         
         ],
         resultsDetail: [
           "Established visual foundation for new designer brand  ",
           "Created cohesive lookbook content for launch ",
           "Positioned Rabbana within culturally conscious, purpose-driven fashion space ",
-       
         ],
         gallery: [
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
