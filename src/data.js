@@ -852,7 +852,7 @@ export const siteData = {
       {
         id: 9,
         slug: "lyres",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/Logo-Lyres.webp",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/lyers-logo.png",
         category: "Lifestyle",
         title: "Lyres",
         video: [
@@ -997,7 +997,7 @@ export const siteData = {
       {
         id: 11,
         slug: "biks-cafe",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/Logo-BiksCafe.png",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/bik's-logo.png",
         category: " Hospitality",
         title: "BIKS CAFE",
         video: [],
@@ -1071,7 +1071,7 @@ export const siteData = {
       {
         id: 12,
         slug: "so-fresh",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-03.png",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/sofresh-logo.png",
         category: "Health & Beauty",
         title: "So Fresh",
         video: [
@@ -1151,7 +1151,7 @@ export const siteData = {
       {
         id: 13,
         slug: "kai-and-creams",
-        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6734.jpg",
+        logo: " https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/kai-cream-logo.png",
         category: "Food & Beverage",
         title: "Kai and Creams",
         video: [
@@ -1237,8 +1237,7 @@ export const siteData = {
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-03.png",
         category: "Fashion",
         title: "Rabbana",
-        video: [
-        ],
+        video: [],
         client: ["Fashion ", " ,", " Designer Womenswear  "],
         timeline: "Completed",
         deliverables: ["Brand Identity ", " Lookbook ", " Photography"],
@@ -1291,8 +1290,6 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9491_(2).jpg",
 
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/NMS_9507_(2).jpg",
-
-
         ],
         results: "",
         timelime: " TIMELIME OF THE PROJECT",
