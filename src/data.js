@@ -273,7 +273,7 @@ export const siteData = {
       "Construction",
       "Tourism",
       "Lifestyle",
-      "Food & Beverage",
+      "Food",
     ],
     projects: [
       {
@@ -1155,6 +1155,9 @@ export const siteData = {
         category: "Food & Beverage",
         title: "Kai and Creams",
         video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/01_FGS_Chunking_D2+(1).mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/16.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/04_RTT_Dance_2.mp4",
         ],
         client: [" Food & Beverage ", " ,", "  Ice Cream Brand "],
         timeline: "Completed",
