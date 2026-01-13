@@ -144,6 +144,12 @@ export const siteData = {
         category: "Category Name",
         img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
       },
+      {
+        name: "KAI AND CREAMS",
+        slug: "kai-and-creams",
+        category: "Category Name",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
+      },
     ],
   },
 
@@ -267,6 +273,7 @@ export const siteData = {
       "Construction",
       "Tourism",
       "Lifestyle",
+      "Food & Beverage",
     ],
     projects: [
       {
@@ -1035,7 +1042,8 @@ export const siteData = {
         results: "",
         timelime: " TIMELIME OF THE PROJECT",
         stage: " Pre-Campaign (Baseline) ",
-        stageDetail: "Biks Cafe had a strong offering but lacked quality visual assets. Their existing content was inconsistent and didn't capture the quality of their food, space, or customer experience.  ",
+        stageDetail:
+          "Biks Cafe had a strong offering but lacked quality visual assets. Their existing content was inconsistent and didn't capture the quality of their food, space, or customer experience.  ",
         phases: [
           {
             id: "1",
@@ -1136,6 +1144,155 @@ export const siteData = {
             id: "4",
             title: "Phase 4 – Growth & Partnerships",
             desc: "Transformed So Fresh into a functioning B2B supplier with credible brand presence across Australia. Unlocked scalable revenue streams and built foundation for continued growth.  ",
+          },
+        ],
+      },
+
+      {
+        id: 13,
+        slug: "kai-and-creams",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-03.png",
+        category: "Food & Beverage",
+        title: "Kai and Creams",
+        video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/17+(1).mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/SALON+AND+SPA+text1+(1).mp4",
+        ],
+        client: [" Food & Beverage ", " ,", "  Ice Cream Brand "],
+        timeline: "Completed",
+        deliverables: ["Video ", "Still", " Social Content", " Lifestyle Storytelling  "],
+        ourWork:
+          "Kai and Creams approached Creyeti looking for more than just product photography they wanted storytelling through visuals. The challenge was to create content that connected their Filipino-rooted ice cream brand to Australian beach culture, capturing the emotional resonance of flavor, memory, and lifestyle. ",
+        campaign: "",
+        typeOfWork: [
+          "Content Strategy – Narrative-led storytelling focused on cultural connection.",
+          "Video Production – Intimate interview highlighting brand heritage and emotion.",
+          "Lifestyle Photography – Beach and pool-side visuals with natural aesthetics.",
+          "Social Content Creation – People-first, social-ready content for product launches.",
+          "On-Location Production – Full-day shoot at Bondi Beach.",
+          "Brand Storytelling – Emotionally driven visuals rooted in cultural identity.",
+        ],
+
+        deliverablesDetail: [
+          "Surfer interview content (5 stills, 2 videos)",
+          "15-20 lifestyle photography deliverables ",
+          "4-5 lifestyle video deliverables (7-15 seconds) ",
+          "Social content: Bondi Beach taste test video ",
+
+          "Pool-side imagery and Reels (10-15 stills, 2-4 Reels)   ",
+        ],
+        resultsDetail: [
+          "Created narrative-driven content library positioning Kai and Creams beyond product  ",
+          "Established visual identity rooted in cultural storytelling and lifestyle authenticity  ",
+          "Connected Filipino heritage with Australian coastal culture through visual language   ",
+        ],
+        gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/3.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/4.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5+(1).png",
+        ],
+        results: "",
+        timelime: " TIMELIME OF THE PROJECT",
+        stage: " Pre-Campaign (Baseline)",
+        stageDetail:
+          " Kai and Creams had product-focused content but lacked the narrative depth and lifestyle storytelling needed to emotionally connect with their audience.  ",
+        phases: [
+          {
+            id: "1",
+            title: "Phase 1 – Creative Strategy & Pre-Production   ",
+            desc: "Developed narrative-led content approach centered on cultural connection and lifestyle moments. Scouted Bondi Beach locations, cast Filipino surfer for interview, and organized multi-scene production.  ",
+          },
+          {
+            id: "2",
+            title: "Phase 2 – Production Day    ",
+            desc: "Executed full-day shoot from 2:30pm to 7:30pm across multiple Bondi Beach locations. Captured surfer interview, lifestyle moments, pool-side content, and social taste-test activation.  ",
+          },
+          {
+            id: "3",
+            title: "Phase 3 – Post-Production & Delivery  ",
+            desc: "Refined all content to ensure cohesive visual storytelling. Delivered platform-optimized assets for social media, web, and brand use with narrative-driven approach.  ",
+          },
+        ],
+      },
+
+      {
+        id: 14,
+        slug: "rabbana",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/final+sofresh+LOGO-03.png",
+        category: "Fashion",
+        title: "Rabbana",
+        video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/17+(1).mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/SALON+AND+SPA+text1+(1).mp4",
+        ],
+        client: ["Fashion ", " ,", " Designer Womenswear  "],
+        timeline: "Completed",
+        deliverables: ["Brand Identity ", " Lookbook ", " Photography"],
+        ourWork:
+          "Rabbana came to Creyeti at launch a new designer clothing brand for women rooted in culture and driven by purpose. The challenge was to establish a visual identity that honored cultural heritage while speaking to the modern, fashion-forward woman. The brand needed lookbook content and imagery that felt authentic, refined, and distinctly Rabbana. ",
+        campaign: "",
+        typeOfWork: [
+          "Cultural Content Strategy – Visual storytelling rooted in heritage and purpose.",
+          "Lookbook Production – Editorial imagery for modern modest fashion.",
+          "Brand Identity Assets – Visuals aligned with brand motto and values.",
+          "Fashion Photography – Elegant, intentional shots with contemporary styling.",
+          "Brand Positioning – Balancing cultural authenticity with modern appeal.",
+        ],
+
+        deliverablesDetail: [
+          "Launch lookbook photography ",
+          "Brand identity visual content ",
+          "Culturally rooted campaign imagery ",
+         
+        ],
+        resultsDetail: [
+          "Established visual foundation for new designer brand  ",
+          "Created cohesive lookbook content for launch ",
+          "Positioned Rabbana within culturally conscious, purpose-driven fashion space ",
+       
+        ],
+        gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/3.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/4.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/5+(1).png",
+        ],
+        results: "",
+        timelime: " TIMELIME OF THE PROJECT",
+        stage: " Pre-Launch (Baseline) ",
+        stageDetail:
+          " Rabbana was launching as a new brand with no existing visual identity or content. The brand needed a complete visual foundation from day one.  ",
+        phases: [
+          {
+            id: "1",
+            title: "Phase 1 – Brand Discovery & Visual Direction ",
+            desc: "Collaborated with founder to understand brand values and cultural positioning. Defined visual approach: elegant, rooted, contemporary, and purpose-driven.",
+          },
+          {
+            id: "2",
+            title: "Phase 2 – Lookbook Production  ",
+            desc: "Executed photography production focused on culturally rooted styling and aesthetics. Captured lookbook imagery that balances heritage and modernity.  ",
+          },
+          {
+            id: "3",
+            title: "Phase 3 – Brand Identity Development   ",
+            desc: "Refined all assets to establish cohesive visual language. Delivered launch-ready content for brand identity and digital presence.  ",
+          },
+          {
+            id: "4",
+            title: "Phase 4 – Launch ",
+            desc: "Content deployed across platforms. Established Rabbana's visual presence as a culturally conscious, purpose-driven designer brand for women.   ",
           },
         ],
       },
