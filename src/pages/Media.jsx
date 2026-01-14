@@ -15,6 +15,8 @@ export default function Media() {
   }
 
   const gallery = project.gallery || [];
+  const reversedGallery = [...gallery].reverse();
+
   const videos = Array.isArray(project.videos)
     ? project.videos
     : Array.isArray(project.video)
@@ -64,11 +66,11 @@ export default function Media() {
               transition={{ duration: 0.45, ease: "easeOut" }}
               className="grid gap-3"
             >
-              {gallery.length >= 3 && (
+              {reversedGallery.length >= 3 && (
                 <div className="grid grid-cols-12 gap-3">
                   <div className="col-span-12 lg:col-span-5">
                     <img
-                      src={gallery[0]}
+                      src={reversedGallery[0]}
                       alt="media-0"
                       className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
                     />
@@ -76,39 +78,39 @@ export default function Media() {
 
                   <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
                     <img
-                      src={gallery[1]}
+                      src={reversedGallery[1]}
                       alt="media-1"
                       className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
                     />
                     <img
-                      src={gallery[2]}
+                      src={reversedGallery[2]}
                       alt="media-2"
                       className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
                     />
                   </div>
                 </div>
               )}
-              {gallery.length >= 5 && (
+              {reversedGallery.length >= 5 && (
                 <div className="grid grid-cols-12 gap-3">
                   <div className="col-span-6 lg:col-span-5">
                     <img
-                      src={gallery[3]}
+                      src={reversedGallery[3]}
                       alt="media-3"
                       className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-6 lg:col-span-7">
                     <img
-                      src={gallery[4]}
+                      src={reversedGallery[4]}
                       alt="media-4"
                       className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
                     />
                   </div>
                 </div>
               )}
-              {gallery.length > 5 && (
+              {reversedGallery.length > 5 && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {gallery.slice(5).map((img, index) => (
+                  {reversedGallery.slice(5).map((img, index) => (
                     <img
                       key={index}
                       src={img}
