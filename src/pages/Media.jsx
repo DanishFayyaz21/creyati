@@ -14,11 +14,11 @@ export default function Media() {
     return <div className="text-white text-center py-20">Media not found</div>;
   }
 
-  const gallery = project.gallery || [];
-  const reversedGallery = [...gallery].reverse();
+  const gallery = (project.gallery || []).slice().reverse();
 
-  const videos = Array.isArray(project.videos)
-    ? project.videos
+
+  const videos = Array.isArray(project?.videos)
+    ? project?.videos
     : Array.isArray(project.video)
       ? project.video
       : project.video
@@ -69,7 +69,7 @@ export default function Media() {
               {Array.from({ length: Math.ceil(gallery.length / 5) }).map((_, groupIndex) => {
                 const startIndex = groupIndex * 5;
                 const groupImages = gallery.slice(startIndex, startIndex + 5);
-                
+
                 return (
                   <div key={groupIndex} className="grid gap-3">
                     {/* First row: 1 large image + 2 stacked images */}
