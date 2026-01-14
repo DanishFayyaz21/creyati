@@ -309,6 +309,18 @@ export const siteData = {
           "Elevated Harpa’h’s reputation as a premium fashion brand",
         ],
         gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3782_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_4343-2_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/22-1.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/22-2.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/22-3.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3163_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3202_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3425-2_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3431-2_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3732_(2).jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3774.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/NMS_3776_(2).jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/1.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/2.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/3.png",
@@ -378,6 +390,48 @@ export const siteData = {
           "Elevated Harpa’h’s reputation as a premium fashion brand",
         ],
         gallery: [
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06458+1.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06992.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC05562_(2).jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC05608+1.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC05995+1.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06201+1.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC05604+1.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC05474.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC05170.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC05639.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06225+1.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06366_(2).jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06763.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06829.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/DSC06864.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/07_330229.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/07_330288.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/15..jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330530.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330704.jpg",
+
+
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/12_331429.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330614.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/05_330059.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/07_330250.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/07_330293.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330430 (1).jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330438 (1).jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330512.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/05_329887.jpg",
+"https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330429.jpg",
+
+
+
+
+
+
+
+
+
+
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/1.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/2.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/3.png",
@@ -527,7 +581,7 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/ANEC9131.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/ANEC9155-Edit.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/ANEC9094-Edit.jpg",
-          
+
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/7.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/8.png",
         ],
