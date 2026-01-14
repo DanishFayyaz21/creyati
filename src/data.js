@@ -124,31 +124,31 @@ export const siteData = {
         name: "BLUE RIBBONS",
         slug: "blue-ribbons",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/Kellyville_Twilight.jpg",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/blueribbon.png",
       },
       {
         name: "LYRES",
         slug: "lyres",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/DSC06339_(2)+1.jpg",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/lyers.png",
       },
       {
         name: "BIKS CAFE",
         slug: "biks-cafe",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/0J3A9215-Edit-2_(2).jpg",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/bik's+cafe+(1).png",
       },
       {
         name: "SO FRESH",
         slug: "so-fresh",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/2.png",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/sofresh.png",
       },
       {
         name: "KAI AND CREAMS",
         slug: "kai-and-creams",
         category: "Category Name",
-        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/0J3A6001.jpg",
+        img: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/kai+n+kream.png",
       },
     ],
   },
@@ -969,7 +969,8 @@ export const siteData = {
         results: "",
         timelime: " TIMELIME OF THE PROJECT",
         stage: "Pre-Campaign (Baseline) ",
-        stageDetail: "Lavanna had sophisticated offerings but their existing visual assets didn't reflect the experience they delivered. There was a disconnect between brand perception and reality.  ",
+        stageDetail:
+          "Lavanna had sophisticated offerings but their existing visual assets didn't reflect the experience they delivered. There was a disconnect between brand perception and reality.  ",
         phases: [
           {
             id: "1",
