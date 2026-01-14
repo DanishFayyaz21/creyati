@@ -15,6 +15,8 @@ export default function Media() {
   }
 
   const gallery = project.gallery || [];
+  const reversedGallery = [...gallery].reverse();
+
   const videos = Array.isArray(project.videos)
     ? project.videos
     : Array.isArray(project.video)

@@ -492,7 +492,7 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/Gym+motivation+2_06+(1).mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Beyond+Labs+Seth+%5BV+2%5D+06.mp4",
         ],
-        client: "Fashion brand",
+        client: "Gym & Fitness brand",
         timeline: "Completed",
         deliverables: ["Videos", "Stills", "Graphics & Ads", "Website"],
         ourWork:
@@ -899,7 +899,7 @@ export const siteData = {
         ],
         client: " Non Alcoholic Beverage ",
         timeline: "Completed",
-        deliverables: ["Brand Integration", "Video", "Still"],
+        deliverables: ["Brand Integration", "Videos", "Stills"],
         ourWork:
           "Lyre's partnered with Creyeti as part of Cerroni's SS26 campaign to integrate the brand into a refined, European inspired lifestyle narrative naturally and without overt product placement.",
         campaign: " ",
@@ -972,7 +972,7 @@ export const siteData = {
         video: [],
         client: ["Hospitality", " ,", " Restaurant"],
         timeline: "Completed",
-        deliverables: ["Video", "Still"],
+        deliverables: ["Videos", "Stills"],
         ourWork:
           "Lavanna approached Creyeti needing high-quality visual content that matched the sophistication of their offering. Their existing assets didn't reflect the experience they delivered, creating a disconnect between brand perception and reality. In a competitive hospitality landscape, weak visuals cost visibility, trust, and customers.",
         campaign: "",
@@ -1041,7 +1041,7 @@ export const siteData = {
         video: [],
         client: ["Hospitality", " ,", " Cafe"],
         timeline: "Completed",
-        deliverables: ["Video", "Still"],
+        deliverables: ["Videos", "Stills"],
         ourWork:
           "Biks Cafe had a strong offering but lacked the visual assets to communicate it effectively. In hospitality, appetite is visual without premium imagery, even the best cafes struggle to convert attention into foot traffic. ",
         campaign: "",
@@ -1118,7 +1118,7 @@ export const siteData = {
         ],
         client: ["B2B Supplier ", " ,", " Food & Beverage "],
         timeline: "Completed",
-        deliverables: ["Brand Strategy ", "Repositioning", "Video", "Paid Advertising "],
+        deliverables: ["Brand Strategy ", "Repositioning", "Videos", "Paid Advertising "],
         ourWork:
           "So Fresh came to Creyeti at inception one product, zero sales, operating B2C with no traction. Our objective was to identify a viable growth pathway, reposition the brand for scale, and build a foundation for consistent revenue and market relevance.",
         campaign: "",
@@ -1199,7 +1199,7 @@ export const siteData = {
         ],
         client: [" Food & Beverage ", " ,", "  Ice Cream Brand "],
         timeline: "Completed",
-        deliverables: ["Video ", "Still", " Social Content", " Lifestyle Storytelling  "],
+        deliverables: ["Videos ", "Stills", " Social Content", " Lifestyle Storytelling  "],
         ourWork:
           "Kai and Creams approached Creyeti looking for more than just product photography they wanted storytelling through visuals. The challenge was to create content that connected their Filipino-rooted ice cream brand to Australian beach culture, capturing the emotional resonance of flavor, memory, and lifestyle. ",
         campaign: "",

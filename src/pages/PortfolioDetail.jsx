@@ -284,7 +284,7 @@ export default function PortfolioDetail() {
         relative
       "
                     >
-                      Show More
+                      See All
                       <span
                         className="
           absolute left-0 -bottom-1
