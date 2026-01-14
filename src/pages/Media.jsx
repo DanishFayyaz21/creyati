@@ -64,60 +64,66 @@ export default function Media() {
               transition={{ duration: 0.45, ease: "easeOut" }}
               className="grid gap-3"
             >
-              {gallery.length >= 3 && (
-                <div className="grid grid-cols-12 gap-3">
-                  <div className="col-span-12 lg:col-span-5">
-                    <img
-                      src={gallery[0]}
-                      alt="media-0"
-                      className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
-                    />
-                  </div>
+              {Array.from({ length: Math.ceil(gallery.length / 5) }).map((_, groupIndex) => {
+                const startIndex = groupIndex * 5;
+                const groupImages = gallery.slice(startIndex, startIndex + 5);
+                
+                return (
+                  <div key={groupIndex} className="grid gap-3">
+                    {/* First row: 1 large image + 2 stacked images */}
+                    {groupImages.length >= 1 && (
+                      <div className="grid grid-cols-12 gap-3">
+                        <div className="col-span-12 lg:col-span-5">
+                          <img
+                            src={groupImages[0]}
+                            alt={`media-${startIndex}`}
+                            className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                          />
+                        </div>
 
-                  <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
-                    <img
-                      src={gallery[1]}
-                      alt="media-1"
-                      className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
-                    />
-                    <img
-                      src={gallery[2]}
-                      alt="media-2"
-                      className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
-                    />
+                        {groupImages.length >= 2 && (
+                          <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
+                            <img
+                              src={groupImages[1]}
+                              alt={`media-${startIndex + 1}`}
+                              className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                            />
+                            {groupImages[2] && (
+                              <img
+                                src={groupImages[2]}
+                                alt={`media-${startIndex + 2}`}
+                                className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                              />
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Second row: 2 images side by side */}
+                    {groupImages.length >= 4 && (
+                      <div className="grid grid-cols-12 gap-3">
+                        <div className="col-span-6 lg:col-span-5">
+                          <img
+                            src={groupImages[3]}
+                            alt={`media-${startIndex + 3}`}
+                            className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                          />
+                        </div>
+                        {groupImages[4] && (
+                          <div className="col-span-6 lg:col-span-7">
+                            <img
+                              src={groupImages[4]}
+                              alt={`media-${startIndex + 4}`}
+                              className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                            />
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
-                </div>
-              )}
-              {gallery.length >= 5 && (
-                <div className="grid grid-cols-12 gap-3">
-                  <div className="col-span-6 lg:col-span-5">
-                    <img
-                      src={gallery[3]}
-                      alt="media-3"
-                      className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="col-span-6 lg:col-span-7">
-                    <img
-                      src={gallery[4]}
-                      alt="media-4"
-                      className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              )}
-              {gallery.length > 5 && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {gallery.slice(5).map((img, index) => (
-                    <img
-                      key={index}
-                      src={img}
-                      alt={`media-${index + 5}`}
-                      className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[350px] object-cover"
-                    />
-                  ))}
-                </div>
-              )}
+                );
+              })}
             </motion.div>
           )}
 

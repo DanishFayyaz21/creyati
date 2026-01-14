@@ -486,6 +486,10 @@ export const siteData = {
         category: "Health & Beauty",
         title: "Beyond Labs",
         video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/1+Gym+Motivation+V2+_06.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/Beyond+Labs+%5BHoops%5D+09.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/19.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/Gym+motivation+2_06+(1).mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Beyond+Labs+Seth+%5BV+2%5D+06.mp4",
         ],
         client: "Fashion brand",
@@ -519,6 +523,11 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/4.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/5.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/6.png",
+
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/ANEC9131.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/ANEC9155-Edit.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/ANEC9094-Edit.jpg",
+          
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/7.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/8.png",
         ],
@@ -625,7 +634,20 @@ export const siteData = {
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/barber+industries.png",
         category: "Tourism",
         title: "Barber Industries",
-        video: ["https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/THE+FRANCHISE_1.mp4"],
+        video: [
+          // new assets links
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/JAY-2.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/THE+FRANCHISE.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/BEFORE+AND+AFTERS_1.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/BIG+RISK+BIG+REWARDS_2.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/LOCATION.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/VID+3_1.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/THE+PEOPLE+AND+THE+AREA_3.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/CLIENT_TESTIMONIAL.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/SR+Version+2.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/videos/JAY-1.mp4",
+          // old assets links
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/THE+FRANCHISE_1.mp4"],
         client: "Fashion brand",
         timeline: "Completed",
         deliverables: ["Videos", "Stills", "Graphics & Ads", "Website"],
@@ -658,6 +680,21 @@ export const siteData = {
           "Digital presence finally matched in-shop vibe",
         ],
         gallery: [
+          // new assets links
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/DSC06165.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/ANEC8882.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/ANEC8617.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/ANEC8623.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/ANEC8650.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/DSC06318.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/DSC09242.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/DSC09975.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/DSC09997.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/ANEC8259.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/ANEC8595.jpg",
+
+
+          // old assets
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/1.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/2.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Barberindustries/3.png",
