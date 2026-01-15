@@ -365,6 +365,12 @@ export const siteData = {
         category: "Fashion",
         title: "Cerroni",
         video: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/1.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/2.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/3.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/4.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/5.mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/SCN_28_Diving.mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/cerroni%2Bvideo+(1).mp4",
         ],
         client: "Fashion brand",
@@ -424,22 +430,14 @@ export const siteData = {
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/08_330429.jpg",
 
 
-
-
-
-
-
-
-
-
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/1.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/2.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/3.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/4.png",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/8.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/5.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/6.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/7.png",
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Cerroni/8.png",
         ],
         results: "Enhanced brand visibility in fashion magazines and online.",
         timelime: "TIMELIME OF THE PROJECT",
@@ -496,6 +494,11 @@ export const siteData = {
           "Sales uplift: Over 400%",
         ],
         gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/masal/DSC05841.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/masal/DSC05824.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/masal/DSC05820.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/masal/DSC05816.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/masal/DSC05639.jpg",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/workpage-masal/Images/Rectangle+34625733.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/workpage-masal/Images/Rectangle+34625734.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/workpage-masal/Images/Rectangle+34625735.png",
