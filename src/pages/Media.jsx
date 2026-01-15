@@ -79,7 +79,7 @@ export default function Media() {
                           <img
                             src={groupImages[0]}
                             alt={`media-${startIndex}`}
-                            className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                            className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
                           />
                         </div>
 
@@ -88,13 +88,13 @@ export default function Media() {
                             <img
                               src={groupImages[1]}
                               alt={`media-${startIndex + 1}`}
-                              className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                              className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
                             />
                             {groupImages[2] && (
                               <img
                                 src={groupImages[2]}
                                 alt={`media-${startIndex + 2}`}
-                                className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover"
+                                className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
                               />
                             )}
                           </div>
@@ -109,7 +109,7 @@ export default function Media() {
                           <img
                             src={groupImages[3]}
                             alt={`media-${startIndex + 3}`}
-                            className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                            className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
                           />
                         </div>
                         {groupImages[4] && (
@@ -117,7 +117,7 @@ export default function Media() {
                             <img
                               src={groupImages[4]}
                               alt={`media-${startIndex + 4}`}
-                              className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                              className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
                             />
                           </div>
                         )}
