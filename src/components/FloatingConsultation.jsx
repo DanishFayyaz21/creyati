@@ -98,20 +98,23 @@ const FloatingConsultation = () => {
           />
 
           {/* Modal Content - Positioned directly next to button with zero gap */}
-          <div className="fixed right-[48px] sm:right-[56px] md:right-[64px] top-1/2 transform -translate-y-1/2 pointer-events-auto p-4 sm:p-4">
+          <div
+            className="fixed right-[48px] sm:right-[56px] md:right-[64px] top-1/2 transform -translate-y-1/2 pointer-events-auto p-4 sm:p-4"
+            onWheel={(e) => e.stopPropagation()} // Prevent scroll propagation to the background
+          >
             <div
               className="bg-white border-2 border-black rounded-lg md:rounded-xl
                          shadow-2xl transform transition-all duration-300 animate-slide-in
-                         w-full max-w-sm max-h-[70vh] overflow-y-auto"
+                         w-full max-w-sm max-h-[70vh] overflow-y-auto pointer-events-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="border-b-2 border-black p-4 md:p-6">
-                <h2 className="text-xl md:text-2xl font-bold text-black">Free Consultation</h2>
+              <div className="border-b-2 border-black p-4 md:p-4">
+                <h2 className="text-xl md:text-xl font-bold text-black">Free Consultation</h2>
               </div>
 
               {/* Modal Body */}
-              <div className="p-4 md:p-6">
+              <div className="p-4 md:p-4">
                 <Formik
                   initialValues={initialValues}
                   validationSchema={validationSchema}
@@ -121,7 +124,7 @@ const FloatingConsultation = () => {
                     <Form className="space-y-4 md:space-y-5">
                       {/* First Name */}
                       <div>
-                        <label className="block text-black font-semibold mb-2 text-sm md:text-base">First Name</label>
+                        {/* <label className="block text-black font-semibold mb-2 text-sm md:text-base">First Name</label> */}
                         <Field
                           type="text"
                           name="firstName"
@@ -140,7 +143,7 @@ const FloatingConsultation = () => {
 
                       {/* Last Name */}
                       <div>
-                        <label className="block text-black font-semibold mb-2 text-sm md:text-base">Last Name</label>
+                        {/* <label className="block text-black font-semibold mb-2 text-sm md:text-base">Last Name</label> */}
                         <Field
                           type="text"
                           name="lastName"
@@ -159,9 +162,9 @@ const FloatingConsultation = () => {
 
                       {/* Email */}
                       <div>
-                        <label className="block text-black font-semibold mb-2 text-sm md:text-base">
+                        {/* <label className="block text-black font-semibold mb-2 text-sm md:text-base">
                           Email <span className="text-red-500">*</span>
-                        </label>
+                        </label> */}
                         <Field
                           type="email"
                           name="email"
@@ -180,14 +183,14 @@ const FloatingConsultation = () => {
 
                       {/* Message */}
                       <div>
-                        <label className="block text-black font-semibold mb-2 text-sm md:text-base">
+                        {/* <label className="block text-black font-semibold mb-2 text-sm md:text-base">
                           Message <span className="text-red-500">*</span>
-                        </label>
+                        </label> */}
                         <Field
                           as="textarea"
                           name="message"
                           placeholder="Tell us about your project..."
-                          rows="4"
+                          rows="3"
                           className={`w-full px-4 py-2 md:py-3 
                                      bg-white border-2 rounded-lg md:rounded-xl
                                      text-black placeholder-gray-400
