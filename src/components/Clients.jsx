@@ -4,6 +4,8 @@ import { siteData } from "../data";
 const Clients = () => {
   const { clients: clientsData } = siteData;
   const [clients, setClients] = useState(clientsData.list);
+  const [visibleClients, setVisibleClients] = useState(clientsData.list.slice(0, 8));
+  const [fadeOut, setFadeOut] = useState(false);
 
   // shuffle helper
   const shuffleArray = (arr) => {
@@ -17,8 +19,17 @@ const Clients = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setClients((prev) => shuffleArray(prev));
-    }, 1200); // shuffle every 1.5s
+      setFadeOut(true);
+      setTimeout(() => {
+        setClients((prev) => {
+          const shuffled = shuffleArray(prev);
+          setVisibleClients(shuffled.slice(0, 8));
+          setFadeOut(false);
+          return shuffled;
+        });
+      }, 500); // duration of fade-out transition
+    }, 3000); // shuffle every 3 seconds
+
     return () => clearInterval(interval);
   }, []);
 
@@ -32,7 +43,7 @@ const Clients = () => {
         </div>
       </div>
       <ul className="grid grid-cols-2 lg:grid-cols-4 border md:border-y border-white/30 transition-all duration-500 w-[91%] mx-auto md:w-[100%]">
-        {clients.map((item) => (
+        {visibleClients.map((item) => (
           <li
             key={item.logo} // stable key since you shuffle
             className="
@@ -49,7 +60,7 @@ const Clients = () => {
               src={item.logo}
               alt={item.name}
               loading="lazy"
-              className="w-full max-w-[100px] md:max-w-[200px] object-contain"
+              className={`w-full max-w-[100px] md:max-w-[200px] object-contain transition-opacity duration-500 ${fadeOut ? "opacity-0" : "opacity-100"}`}
             />
           </li>
         ))}

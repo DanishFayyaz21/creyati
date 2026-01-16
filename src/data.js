@@ -27,7 +27,7 @@ export const siteData = {
 
   clients: {
     title: "partnerships",
-    list: [
+      list: [
       {
         name: "Client 1",
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/amazon.png",
@@ -60,6 +60,50 @@ export const siteData = {
         name: "Client 8",
         logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/atlas+copco.png",
       },
+      {
+        name: "Client 9",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/harpah.png",
+      },
+      {
+        name: "Client 10",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/masal.png",
+      },
+      {
+        name: "Client 11",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/beyond+labs.png",
+      },
+      {
+        name: "Client 12",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/all+logos/ravepack+1.png",
+      },
+      {
+        name: "Client 12",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Blue+Ribbons/blue-ribbon-logo.png",
+      },
+      {
+        name: "Client 13",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lyres/lyers-logo.png",
+      },
+      {
+        name: "Client 14",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/lavana/lavana-logo.png",
+      },
+      {
+        name: "Client 15",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/biks-cafe/bik's-logo.png",
+      },
+      {
+        name: "Client 16",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/sofresh-logo.png",
+      },
+      {
+        name: "Client 17",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Kai%26Creams/kai-cream-logo.png",
+      },
+      {
+        name: "Client 18",
+        logo: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/rabbana/rabbana-logo.png",
+      }
     ],
   },
 
