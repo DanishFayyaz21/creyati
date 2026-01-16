@@ -51,7 +51,7 @@ export default function Media() {
                       : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
                     }`}
                 >
-                  {tab === "still" ? "Still" : "Videos"}
+                  {tab === "still" ? "Stills" : "Videos"}
                 </button>
               );
             })}
@@ -141,21 +141,42 @@ export default function Media() {
               className="flex flex-col gap-10"
             >
               {videos.length > 0 ? (
-                Array.from({ length: Math.ceil(videos.length / 2) }).map((_, rowIndex) => {
-                  const first = videos[rowIndex * 2];
-                  const second = videos[rowIndex * 2 + 1];
+                Array.from({ length: Math.ceil(videos.length / 3) }).map((_, rowIndex) => {
+                  const startIdx = rowIndex * 3;
+                  const rowVideos = videos.slice(startIdx, startIdx + 3);
 
                   return (
                     <div
                       key={rowIndex}
-                      className="grid grid-cols-1 lg:grid-cols-12 gap-6"
+                      className={`grid gap-6 ${
+                        rowVideos.length === 1
+                          ? "grid-cols-1 lg:grid-cols-12"
+                          : "grid-cols-1 lg:grid-cols-12"
+                      }`}
                     >
-                      {first && (
-                        <VideoPlayer src={first} className="lg:col-span-4" />
-                      )}
-
-                      {second && (
-                        <VideoPlayer src={second} className="lg:col-span-8" />
+                      {rowVideos.length === 1 ? (
+                        // Single video - full width
+                        <div className="lg:col-span-12">
+                          <VideoPlayer src={rowVideos[0]} className="w-full" />
+                        </div>
+                      ) : rowVideos.length === 2 ? (
+                        // Two videos - half width each
+                        rowVideos.map((video, idx) => (
+                          <VideoPlayer
+                            key={idx}
+                            src={video}
+                            className="lg:col-span-6"
+                          />
+                        ))
+                      ) : (
+                        // Three videos - equal distribution
+                        rowVideos.map((video, idx) => (
+                          <VideoPlayer
+                            key={idx}
+                            src={video}
+                            className="lg:col-span-4"
+                          />
+                        ))
                       )}
                     </div>
                   );
