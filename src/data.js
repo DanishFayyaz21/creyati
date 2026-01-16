@@ -1588,8 +1588,8 @@ export const siteData = {
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/Group+175.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/Mask+group.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/Mask+group-1.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/MASAL+Westfield.mp4",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/bike+giveaway+1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/MASAL+Westfield.mp4",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/Business_Card_Mockup_3+copy+1.png",
           ],
           expectations: [
