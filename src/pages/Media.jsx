@@ -8,9 +8,17 @@ export default function Media() {
   const { slug } = useParams();
   const project = siteData.portfolio.projects.find((p) => p.slug === slug);
 
-  const isBeyondLabs = slug === "beyond-labs";
+  // Define arrays for brand categories
+  const brandsWithOnlyStills = ["masal"];
+  const brandsWithOnlyVideos = ["beyond-labs"];
+  const brandsWithBoth = siteData.portfolio.projects
+    .map((p) => p.slug)
+    .filter((slug) => !brandsWithOnlyStills.includes(slug) && !brandsWithOnlyVideos.includes(slug));
 
-  const [activeTab, setActiveTab] = useState(isBeyondLabs ? "video" : "still");
+  const isOnlyStills = brandsWithOnlyStills.includes(slug);
+  const isOnlyVideos = brandsWithOnlyVideos.includes(slug);
+
+  const [activeTab, setActiveTab] = useState(isOnlyVideos ? "video" : "still");
 
   if (!project) {
     return <div className="text-white text-center py-20">Media not found</div>;
@@ -37,7 +45,7 @@ export default function Media() {
           />
         </div>
 
-        {slug !== "beyond-labs" && (
+        {!isOnlyStills && !isOnlyVideos && ( // Show buttons only if both stills and videos are available
           <div className="flex justify-center gap-6 mb-14 flex-wrap sticky top-28 z-10">
             {["still", "video"].map((tab) => {
               const isActive = activeTab === tab;
@@ -62,7 +70,7 @@ export default function Media() {
 
         <AnimatePresence mode="wait">
           {/* STILLS — only if NOT beyond-labs */}
-          {!isBeyondLabs && activeTab === "still" && (
+          {!isOnlyVideos && activeTab === "still" && (
             <motion.div
               key="images"
               initial={{ opacity: 0, y: 16 }}
@@ -138,7 +146,7 @@ export default function Media() {
           )}
 
           {/* VIDEOS — always show for beyond-labs */}
-          {(activeTab === "video" || isBeyondLabs) && (
+          {(activeTab === "video") && (
             <motion.div
               key="videos"
               initial={{ opacity: 0, y: 16 }}
