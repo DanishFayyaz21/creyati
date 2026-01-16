@@ -18,6 +18,7 @@ import WebDevelopment from "./pages/services/WebDevelopment";
 import ThreeD from "./pages/services/ThreeD";
 import Strategy from "./pages/services/Strategy";
 import Media from "./pages/Media";
+import ServiceInnerPage from "./pages/services/ServiceInnerPage"; // Dynamic service page
 
 const AppRoutes = () => {
   return (
@@ -30,7 +31,7 @@ const AppRoutes = () => {
       <Route path="/media/:slug" element={<Media />} />
 
       {/* ✅ Static service inner pages */}
-      <Route path="/services/videography" element={<Videography />} />
+      {/* <Route path="/services/videography" element={<Videography />} />
       <Route path="/services/photography" element={<Photography />} />
       <Route path="/services/social-media" element={<SocialMedia />} />
       <Route path="/services/branding" element={<Branding />} />
@@ -38,7 +39,10 @@ const AppRoutes = () => {
       <Route path="/services/advertising" element={<Advertising />} />
       <Route path="/services/web-development" element={<WebDevelopment />} />
       <Route path="/services/3d" element={<ThreeD />} />
-      <Route path="/services/strategy" element={<Strategy />} />
+      <Route path="/services/strategy" element={<Strategy />} /> */}
+
+      {/* Dynamic service inner page */}
+      <Route path="/services/:slug" element={<ServiceInnerPage />} />
 
       <Route path="/contact" element={<ContactPage />} />
     </Routes>

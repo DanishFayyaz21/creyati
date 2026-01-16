@@ -1488,10 +1488,10 @@ export const siteData = {
           gallery: [
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/1+-n.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/2+-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/3+-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/3-n.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/4+-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/5+-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/6+-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/5-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/6-n.png",
 
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/image+43.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/screencapture-instagram-cerroniaustralia-2025-09-05-17_37_57_page-0004+1.png",
