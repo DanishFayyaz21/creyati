@@ -1483,8 +1483,16 @@ export const siteData = {
           slug: "social-media",
           title: "Social Media",
           description: "Content made for today’s feeds. We create work that stops the scroll and sparks engagement.",
-          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/social+media.mp4",
+          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/social+media+new.mp4",
+          // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/social+media.mp4",
           gallery: [
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/1+-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/2+-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/3+-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/4+-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/5+-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/6+-n.png",
+
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/image+43.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/screencapture-instagram-cerroniaustralia-2025-09-05-17_37_57_page-0004+1.png",
           ],
@@ -1502,8 +1510,20 @@ export const siteData = {
           title: "Branding",
           description:
             "We don’t just brand businesses – we craft identities that carry weight, character, and longevity. Branding is about building worlds, not just visuals. At Creyeti, we weave together design, voice, and experience into a complete identity system. The result? A brand that feels timeless, distinctive, and impossible to ignore.",
-          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/branding.mp4",
+          // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/branding.mp4",
+          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/branding+new.mp4",
           gallery: [
+            // new links
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/1-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/2-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/3-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/4-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/5-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/6-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/7-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/8-n.png",
+
+            // old links
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/1.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/2.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/9.png",
@@ -1526,17 +1546,29 @@ export const siteData = {
           title: "Graphic Design",
           description:
             "Design with purpose. Visuals that cut through noise and communicate clearly. We create designs that are simple, modern, and bold. From campaign graphics to everyday social content, our work ensures your message is always understood and your brand always looks sharp.",
-          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/Graphic+Design.mp4",
-          gallery: [
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/1.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/2.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/3.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/4.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/5.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/6.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/7.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/8.png",
-          ],
+          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/Design+new.mp4",
+          // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/Graphic+Design.mp4",
+          gallery:
+            [
+              // new 
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/1-n.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/2-n.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/3-n.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/4-n.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/5-n.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/6-n.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/7-n.png",
+
+              // old
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/1.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/2.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/3.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/4.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/5.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/6.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/7.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/8.png",
+            ],
           expectations: [
             "Campaign graphics",
             "Posters, flyers, brochures",
@@ -1550,7 +1582,8 @@ export const siteData = {
           title: "Advertising",
           description:
             "Smart, creative campaigns that turn audiences into customers. We craft advertising that feels genuine but hits hard. By blending creativity with strategy, our ads get seen, remembered, and acted on, whether it’s social campaigns, video ads, or digital rollouts.",
-          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/Advertising.mp4",
+          // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/Advertising.mp4",
+          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/advertising+new.mp4",
           gallery: [
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/Group+175.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Advertising/Mask+group.png",
@@ -1572,8 +1605,14 @@ export const siteData = {
           title: "Web Development",
           description:
             "Websites that look sharp and perform seamlessly. Built for growth and ease of use. Your website should feel simple, intuitive, and engaging. We design and build sites that are responsive, user-friendly, and tailored to showcase your brand story while driving results.",
-          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/website.mp4",
+          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/website+new.mp4",
+          // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/website.mp4",
           gallery: [
+            // new
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/1-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/2-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/3-n.png",
+            // old
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Mobile-site/service-page/Website-development/Group+171.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Mobile-site/service-page/Website-development/Group+172.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Mobile-site/service-page/Website-development/Group+173.png",
@@ -1597,16 +1636,19 @@ export const siteData = {
           title: "3D",
           description:
             "Immersive 3D visuals that bring ideas to life. From sleek product renders to high-end animations, our 3D work pushes brands into new creative spaces. Whether for campaigns, packaging, or digital assets, we create visuals that feel dynamic and forward-thinking.",
-          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/3D.mp4",
+          // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/3D.mp4",
+          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/3D+new.mp4",
           gallery: [
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/072a98a4-d354-4991-94ab-68ecdcd35cf9+2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/NO+12.png",
+            // "https://placehold.co/1920x1080",
+            // "https://placehold.co/1920x1080",
+            // "https://placehold.co/1920x1080",
+            // "https://placehold.co/1920x1080",
+            // "https://placehold.co/1920x1080",
+            // "https://placehold.co/1920x1080",
+            // "https://placehold.co/1920x1080",
+            // "https://placehold.co/1920x1080",
           ],
           expectations: [
             "Product modeling & rendering",
