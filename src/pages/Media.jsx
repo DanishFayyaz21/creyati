@@ -36,25 +36,27 @@ export default function Media() {
           />
         </div>
 
-        <div className="flex justify-center gap-6 mb-14 flex-wrap sticky top-28 z-10">
-          {["still", "video"].map((tab) => {
-            const isActive = activeTab === tab;
+        {slug !== "beyond-labs" && (
+          <div className="flex justify-center gap-6 mb-14 flex-wrap sticky top-28 z-10">
+            {["still", "video"].map((tab) => {
+              const isActive = activeTab === tab;
 
-            return (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`btn uppercase max-w-fit transition-all duration-300
-          ${isActive
-                    ? "bg-white text-black"
-                    : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
-                  }`}
-              >
-                {tab === "still" ? "Still" : "Videos"}
-              </button>
-            );
-          })}
-        </div>
+              return (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`btn uppercase max-w-fit transition-all duration-300
+            ${isActive
+                      ? "bg-white text-black"
+                      : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
+                    }`}
+                >
+                  {tab === "still" ? "Stills" : "Videos"}
+                </button>
+              );
+            })}
+          </div>
+        )}
 
         <AnimatePresence mode="wait">
           {activeTab === "still" && (
@@ -139,21 +141,42 @@ export default function Media() {
               className="flex flex-col gap-10"
             >
               {videos.length > 0 ? (
-                Array.from({ length: Math.ceil(videos.length / 2) }).map((_, rowIndex) => {
-                  const first = videos[rowIndex * 2];
-                  const second = videos[rowIndex * 2 + 1];
+                Array.from({ length: Math.ceil(videos.length / 3) }).map((_, rowIndex) => {
+                  const startIdx = rowIndex * 3;
+                  const rowVideos = videos.slice(startIdx, startIdx + 3);
 
                   return (
                     <div
                       key={rowIndex}
-                      className="grid grid-cols-1 lg:grid-cols-12 gap-6"
+                      className={`grid gap-6 ${
+                        rowVideos.length === 1
+                          ? "grid-cols-1 lg:grid-cols-12"
+                          : "grid-cols-1 lg:grid-cols-12"
+                      }`}
                     >
-                      {first && (
-                        <VideoPlayer src={first} className="lg:col-span-4" />
-                      )}
-
-                      {second && (
-                        <VideoPlayer src={second} className="lg:col-span-8" />
+                      {rowVideos.length === 1 ? (
+                        // Single video - full width
+                        <div className="lg:col-span-12">
+                          <VideoPlayer src={rowVideos[0]} className="w-full" />
+                        </div>
+                      ) : rowVideos.length === 2 ? (
+                        // Two videos - half width each
+                        rowVideos.map((video, idx) => (
+                          <VideoPlayer
+                            key={idx}
+                            src={video}
+                            className="lg:col-span-6"
+                          />
+                        ))
+                      ) : (
+                        // Three videos - equal distribution
+                        rowVideos.map((video, idx) => (
+                          <VideoPlayer
+                            key={idx}
+                            src={video}
+                            className="lg:col-span-4"
+                          />
+                        ))
                       )}
                     </div>
                   );

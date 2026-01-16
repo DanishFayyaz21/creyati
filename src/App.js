@@ -6,6 +6,7 @@ import SmoothScroll from "./components/SmoothScroll";
 import ScrollToTop from "./components/ScrollToTop";
 import { ArrowDownIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
 import Loader from "./components/Loader"; // 👈 import Loader
+import FloatingConsultation from "./components/FloatingConsultation";
 
 function App() {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -60,6 +61,7 @@ function App() {
 
           <SmoothScroll />
           <ScrollToTop />
+          <FloatingConsultation />
           <Header />
           <AppRoutes />
           <Footer />
