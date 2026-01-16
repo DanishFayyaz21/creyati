@@ -8,7 +8,9 @@ export default function Media() {
   const { slug } = useParams();
   const project = siteData.portfolio.projects.find((p) => p.slug === slug);
 
-  const [activeTab, setActiveTab] = useState("still");
+  const isBeyondLabs = slug === "beyond-labs";
+
+  const [activeTab, setActiveTab] = useState(isBeyondLabs ? "video" : "still");
 
   if (!project) {
     return <div className="text-white text-center py-20">Media not found</div>;
@@ -16,14 +18,13 @@ export default function Media() {
 
   const gallery = (project.gallery || []).slice().reverse();
 
-
   const videos = Array.isArray(project?.videos)
     ? project?.videos
     : Array.isArray(project.video)
-      ? project.video
-      : project.video
-        ? [project.video]
-        : [];
+    ? project.video
+    : project.video
+    ? [project.video]
+    : [];
 
   return (
     <div className="bg-black text-white min-h-screen py-28">
@@ -46,10 +47,11 @@ export default function Media() {
                   key={tab}
                   onClick={() => setActiveTab(tab)}
                   className={`btn uppercase max-w-fit transition-all duration-300
-            ${isActive
-                      ? "bg-white text-black"
-                      : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
-                    }`}
+            ${
+              isActive
+                ? "bg-white text-black"
+                : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
+            }`}
                 >
                   {tab === "still" ? "Stills" : "Videos"}
                 </button>
@@ -59,7 +61,8 @@ export default function Media() {
         )}
 
         <AnimatePresence mode="wait">
-          {activeTab === "still" && (
+          {/* STILLS — only if NOT beyond-labs */}
+          {!isBeyondLabs && activeTab === "still" && (
             <motion.div
               key="images"
               initial={{ opacity: 0, y: 16 }}
@@ -73,8 +76,11 @@ export default function Media() {
                 const groupImages = gallery.slice(startIndex, startIndex + 5);
 
                 return (
-                  <div key={groupIndex} className="grid gap-3">
-                    {/* First row: 1 large image + 2 stacked images */}
+                  <div
+                    key={groupIndex}
+                    className="grid gap-3"
+                  >
+                    {/* First row */}
                     {groupImages.length >= 1 && (
                       <div className="grid grid-cols-12 gap-3">
                         <div className="col-span-12 lg:col-span-5">
@@ -104,7 +110,7 @@ export default function Media() {
                       </div>
                     )}
 
-                    {/* Second row: 2 images side by side */}
+                    {/* Second row */}
                     {groupImages.length >= 4 && (
                       <div className="grid grid-cols-12 gap-3">
                         <div className="col-span-6 lg:col-span-5">
@@ -131,7 +137,8 @@ export default function Media() {
             </motion.div>
           )}
 
-          {activeTab === "video" && (
+          {/* VIDEOS — always show for beyond-labs */}
+          {(activeTab === "video" || isBeyondLabs) && (
             <motion.div
               key="videos"
               initial={{ opacity: 0, y: 16 }}
@@ -148,32 +155,25 @@ export default function Media() {
                   return (
                     <div
                       key={rowIndex}
-                      className={`grid gap-6 ${
-                        rowVideos.length === 1
-                          ? "grid-cols-1 lg:grid-cols-12"
-                          : "grid-cols-1 lg:grid-cols-12"
-                      }`}
+                      className="grid gap-6 lg:grid-cols-12"
                     >
                       {rowVideos.length === 1 ? (
-                        // Single video - full width
-                        <div className="lg:col-span-12">
-                          <VideoPlayer src={rowVideos[0]} className="w-full" />
+                        <div className="relative lg:col-span-12">
+                          <VideoPlayer src={rowVideos[0]} />
                         </div>
                       ) : rowVideos.length === 2 ? (
-                        // Two videos - half width each
-                        rowVideos.map((video, idx) => (
+                        rowVideos.map((v, i) => (
                           <VideoPlayer
-                            key={idx}
-                            src={video}
+                            key={i}
+                            src={v}
                             className="lg:col-span-6"
                           />
                         ))
                       ) : (
-                        // Three videos - equal distribution
-                        rowVideos.map((video, idx) => (
+                        rowVideos.map((v, i) => (
                           <VideoPlayer
-                            key={idx}
-                            src={video}
+                            key={i}
+                            src={v}
                             className="lg:col-span-4"
                           />
                         ))
