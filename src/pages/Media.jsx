@@ -36,25 +36,27 @@ export default function Media() {
           />
         </div>
 
-        <div className="flex justify-center gap-6 mb-14 flex-wrap sticky top-28 z-10">
-          {["still", "video"].map((tab) => {
-            const isActive = activeTab === tab;
+        {slug !== "beyond-labs" && (
+          <div className="flex justify-center gap-6 mb-14 flex-wrap sticky top-28 z-10">
+            {["still", "video"].map((tab) => {
+              const isActive = activeTab === tab;
 
-            return (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`btn uppercase max-w-fit transition-all duration-300
-          ${isActive
-                    ? "bg-white text-black"
-                    : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
-                  }`}
-              >
-                {tab === "still" ? "Still" : "Videos"}
-              </button>
-            );
-          })}
-        </div>
+              return (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`btn uppercase max-w-fit transition-all duration-300
+            ${isActive
+                      ? "bg-white text-black"
+                      : "bg-transparent text-white border border-white hover:bg-white hover:text-black"
+                    }`}
+                >
+                  {tab === "still" ? "Still" : "Videos"}
+                </button>
+              );
+            })}
+          </div>
+        )}
 
         <AnimatePresence mode="wait">
           {activeTab === "still" && (
