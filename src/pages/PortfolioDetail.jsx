@@ -269,20 +269,18 @@ export default function PortfolioDetail() {
                   </AnimatePresence>
                   <div
                     className="
-      absolute inset-0 z-20 
-      flex items-center justify-center 
-      bg-gray-900/70 
-      transition-colors duration-300
-      group-hover:bg-gray-900/80
-    "
+                    absolute inset-0 z-20 
+                    flex items-center justify-center 
+                    bg-gray-900/70 
+                    transition-colors duration-300
+                    group-hover:bg-gray-900/80"
                   >
                     <span
-                      className="
-        text-white 
-        text-xs sm:text-sm md:text-base 
-        font-semibold uppercase tracking-widest
-        relative
-      "
+                      className="text-white 
+                                text-xs sm:text-sm md:text-base 
+                                font-semibold uppercase tracking-widest
+                                relative
+                              "
                     >
                       See All
                       <span
