@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { siteData } from "../data";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -116,12 +117,12 @@ const Banner = () => {
             </span>
           </h1>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="text-base font-semibold bg-white text-black px-8 h-12 flex items-center justify-center max-w-fit rounded-full hover:bg-gray-200 transition-colors duration-300 capitalize"
           >
             {hero.cta}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

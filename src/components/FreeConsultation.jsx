@@ -323,6 +323,7 @@ export default function FreeConsultation() {
                     <h2 className="heading2 text-center text-fill-white">
                         Free Consultation
                     </h2>
+                    {/* <p className="text-white/50 text-center -mt-4 ">Book a free consultation with one of our experts</p> */}
                 </div>
                 <p className="text-xs md:text-sm text-gray-600 mt-1">
                     {/* {!selectedDate && "Pick a future date to get started."} */}
