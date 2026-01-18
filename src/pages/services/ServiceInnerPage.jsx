@@ -50,9 +50,19 @@ const ServiceInnerPage = () => {
 
                     {/* Gallery */}
                     <div className="grid gap-3 pt-16">
-                        {Array.from({ length: Math.ceil(service.gallery.length / 5) }).map((_, groupIndex) => {
+                        {Array.from({
+                            length: Math.ceil(
+                                (window.innerWidth < 1024 && service?.mobileGallery?.length > 0
+                                    ? service?.mobileGallery
+                                    : service?.gallery
+                                ).length / 5
+                            )
+                        }).map((_, groupIndex) => {
                             const startIndex = groupIndex * 5;
-                            const groupMedia = service.gallery.slice(startIndex, startIndex + 5);
+                            const groupMedia = (window?.innerWidth < 1024 && service?.mobileGallery?.length > 0
+                                ? service?.mobileGallery
+                                : service?.gallery
+                            ).slice(startIndex, startIndex + 5);
 
                             return (
                                 <div key={groupIndex} className="grid gap-3">
