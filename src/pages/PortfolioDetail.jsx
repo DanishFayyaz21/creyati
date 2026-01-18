@@ -57,7 +57,8 @@ export default function PortfolioDetail() {
   // Listen for fullscreen change events
   useEffect(() => {
     const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
+      const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+      setIsFullscreen(!!fullscreenElement);
     };
 
     document.addEventListener("fullscreenchange", handleFullscreenChange);
