@@ -1215,6 +1215,7 @@ export const siteData = {
         title: "So Fresh",
         video: [
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/17+(1).mp4",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/SO_FRESH_HOSPO_BASIC-COLOUR+(1).mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/so-fresh/SALON+AND+SPA+text1+(1).mp4",
         ],
         client: ["B2B Supplier ", " ,", " Food & Beverage "],
@@ -1621,16 +1622,16 @@ export const siteData = {
               // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/7.png",
               // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/8.png",
             ],
-            mobileGallery: [
-              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/6.png",
-              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/1.png",
-              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/2.png",
-              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/3.png",
-              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/4.png",
-              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/5.png",
-              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/7.png",
+          mobileGallery: [
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/6.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/5.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/7.png",
 
-            ],
+          ],
           expectations: [
             "Campaign graphics",
             "Posters, flyers, brochures",

@@ -222,40 +222,45 @@ export default function PortfolioDetail() {
               )}
             </div>
 
-            {/* Row 3: 3 images */}
-            <div className="grid grid-cols-12 gap-3">
-              {/* Full-width image on md and up */}
-              {project.gallery?.[5] && (
-                <div className="col-span-12 lg:col-span-4">
-                  <img
-                    src={project.gallery[5]}
-                    alt="img-6"
-                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[400px] md:max-h-[300px] object-cover md:object-top"
-                  />
-                </div>
-              )}
+            {/* Row 3: Images + See All - Always render if gallery exists */}
+            {project.gallery && project.gallery.length > 0 && (
+              <div className="grid grid-cols-12 gap-3">
+                {/* Full-width image on md and up */}
+                {project.gallery?.[5] && (
+                  <div className="col-span-12 lg:col-span-4">
+                    <img
+                      src={project.gallery[5]}
+                      alt="img-6"
+                      className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[400px] md:max-h-[300px] object-cover md:object-top"
+                    />
+                  </div>
+                )}
 
-              {/* Two side-by-side images */}
-              {project.gallery?.[6] && (
-                <div className="col-span-6 lg:col-span-4">
-                  <img
-                    src={project.gallery[6]}
-                    alt="img-7"
-                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
-                  />
-                </div>
-              )}
-              {project.gallery?.length > 0 && (
+                {/* Two side-by-side images */}
+                {project.gallery?.[6] && (
+                  <div className="col-span-6 lg:col-span-4">
+                    <img
+                      src={project.gallery[6]}
+                      alt="img-7"
+                      className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[300px] object-cover object-top"
+                    />
+                  </div>
+                )}
+                
+                {/* Always show See All button */}
                 <Link
                   to={`/media/${slug}`}
-                  className="
-    group
-    col-span-6 lg:col-span-4 
-    relative rounded-lg lg:rounded-[25px] 
-    overflow-hidden max-h-[300px] 
-    cursor-pointer
-  "
-                >
+                  className={`group
+                              relative rounded-lg lg:rounded-[25px] 
+                              overflow-hidden 
+                              h-[300px]
+                              cursor-pointer
+                              ${!project.gallery?.[5] && !project.gallery?.[6] 
+                                ? 'col-span-12 lg:col-span-12' 
+                                : !project.gallery?.[6] 
+                                  ? 'col-span-12 lg:col-span-8'
+                                  : 'col-span-6 lg:col-span-4'
+                              }`}>
                   <AnimatePresence mode="wait">
                     <motion.img
                       key={activeImageIndex}
@@ -276,27 +281,24 @@ export default function PortfolioDetail() {
                     transition-colors duration-300
                     group-hover:bg-gray-900/80"
                   >
-                    <span
-                      className="text-white 
+                    <span className="text-white 
                                 text-xs sm:text-sm md:text-base 
                                 font-semibold uppercase tracking-widest
-                                relative
-                              "
-                    >
+                                relative">
                       See All
                       <span
                         className="
-          absolute left-0 -bottom-1
-          w-0 h-[1px] bg-white
-          transition-all duration-300
-          group-hover:w-full
-        "
+                          absolute left-0 -bottom-1
+                          w-0 h-[1px] bg-white
+                          transition-all duration-300
+                          group-hover:w-full
+                        "
                       />
                     </span>
                   </div>
                 </Link>
-              )}
-            </div>
+              </div>
+            )}
           </div>
           <div className="lg:col-span-3">
             <h5 className="text-xl leading-none text-fill-white font-normal mb-2">{project.timelime}</h5>
