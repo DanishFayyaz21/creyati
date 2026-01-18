@@ -7,6 +7,7 @@ import ContactUs from "../components/ContactUs";
 import Reviews from "../components/Reviews";
 import AnimationSection from "../components/AnimationSection";
 import Products from "../components/Products";
+import FreeConsultation from "../components/FreeConsultation";
 
 const Home = () => {
   return (
@@ -18,7 +19,9 @@ const Home = () => {
       <Showcase />
       <Clients />
       {/* <Reviews /> */}
-      <ContactUs />
+
+      <FreeConsultation />
+      {/* <ContactUs /> */}
     </main>
   );
 };

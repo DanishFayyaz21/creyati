@@ -62,9 +62,20 @@ module.exports = {
             backgroundPosition: '100% 0%',
           },
         },
+        slideInRight: {
+          '0%': {
+            transform: 'translateX(100%)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
       },
       animation: {
         gradientMove: 'gradientMove 5s ease-in-out infinite',
+        'slide-in-right': 'slideInRight 0.5s ease-out forwards',
       },
       blur: {
         'xxl': '200px',
