@@ -36,6 +36,7 @@ const MONTHS = [
 
 // Adjust as you like
 const NICHES = [
+  "General",
   "Web Development",
   "Videography",
   "Photography",
@@ -334,9 +335,8 @@ export default function FreeConsultation() {
       <div className={`grid grid-cols-1 gap-6 ${selectedDate ? "lg:grid-cols-3" : "justify-items-center"}`}>
         {/* Calendar */}
         <div
-          className={`rounded-2xl border border-gray-600 bg-black shadow-sm transition-all duration-500 ease-in-out col-span-1 ${
-            selectedDate ? "lg:col-span-2" : "max-w-2xl w-full"
-          }`}
+          className={`rounded-2xl border border-gray-600 bg-black shadow-sm transition-all duration-500 ease-in-out col-span-1 ${selectedDate ? "lg:col-span-2" : "max-w-2xl w-full"
+            }`}
         >
           <div className="flex items-center justify-between p-4 border-b border-gray-700">
             <div className="flex items-center gap-2">
@@ -489,18 +489,29 @@ export default function FreeConsultation() {
 
                 {!selectedNiche && (
                   <div className="mt-4">
-                    <div className="text-sm font-medium mb-3 text-white">Select your niche</div>
-                    <div className="grid grid-cols-1 gap-2">
-                      {NICHES.map((niche) => (
-                        <button
-                          key={niche}
-                          type="button"
-                          onClick={() => onSelectNiche(niche)}
-                          className="px-3 py-2 rounded-xl border border-white text-white hover:bg-gray-800 text-sm text-left transition active:scale-[0.99]"
-                        >
-                          {niche}
-                        </button>
-                      ))}
+                    <div className="text-sm font-medium mb-3 text-white flex items-center gap-2">
+                      Select your niche
+                    </div>
+                    <div className="relative group">
+                      <div className="absolute -inset-0.5 bg-gradient-to-r from-white via-gray-400 to-white rounded-xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+                      <select
+                        value=""
+                        onChange={(e) => onSelectNiche(e.target.value)}
+                        className="relative w-full px-4 py-3 rounded-xl border-2 border-white bg-black text-white hover:bg-gray-900 text-sm transition-all duration-300 outline-none focus:ring-2 focus:ring-white/40 focus:border-gray-300 cursor-pointer shadow-lg hover:shadow-white/20 appearance-none bg-gradient-to-br from-gray-900 to-black"
+                        style={{
+                          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
+                          backgroundRepeat: 'no-repeat',
+                          backgroundPosition: 'right 0.75rem center',
+                          backgroundSize: '1.25rem',
+                        }}
+                      >
+                        <option value="" disabled className="bg-gray-900">Choose a niche...</option>
+                        {NICHES.map((niche) => (
+                          <option key={niche} value={niche} className="bg-gray-900 hover:bg-gray-800 py-2">
+                            {niche}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                   </div>
                 )}
@@ -637,8 +648,8 @@ export default function FreeConsultation() {
                       status.state === "success"
                         ? "bg-green-900/30 border-green-600 text-green-400"
                         : status.state === "error"
-                        ? "bg-red-900/30 border-red-600 text-red-400"
-                        : "bg-gray-900 border-gray-600 text-gray-300",
+                          ? "bg-red-900/30 border-red-600 text-red-400"
+                          : "bg-gray-900 border-gray-600 text-gray-300",
                     ].join(" ")}
                   >
                     {status.message}
