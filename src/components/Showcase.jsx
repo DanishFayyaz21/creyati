@@ -14,7 +14,7 @@ const Showcase = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % list.length);
-    }, 6000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [list.length]);
