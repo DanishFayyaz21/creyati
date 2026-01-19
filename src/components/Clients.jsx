@@ -60,8 +60,7 @@ const Clients = () => {
               src={item.logo}
               alt={item.name}
               loading="lazy"
-              className={`w-full max-w-[100px] md:max-w-[200px] object-contain transition-opacity duration-500 ${fadeOut ? "opacity-0" : "opacity-100"}`}
-            />
+              className="w-full max-w-[100px] md:max-w-[200px] object-contain" />
           </li>
         ))}
       </ul>
