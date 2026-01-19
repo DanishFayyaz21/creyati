@@ -10,7 +10,7 @@ const Showcase = () => {
   const { title, list } = siteData.showcase;
   const activeItem = list[activeIndex];
 
-  // Auto slide every 6 seconds
+  // Auto slide every 7 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % list.length);
