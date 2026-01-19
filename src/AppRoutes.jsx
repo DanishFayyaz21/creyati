@@ -19,12 +19,14 @@ import ThreeD from "./pages/services/ThreeD";
 import Strategy from "./pages/services/Strategy";
 import Media from "./pages/Media";
 import ServiceInnerPage from "./pages/services/ServiceInnerPage"; // Dynamic service page
+import StudioPage from "./pages/studio";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/work" element={<WorkPage />} />
+      <Route path="/studio" element={<StudioPage />} />
       <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/services" element={<ServicesPage />} />
