@@ -8,15 +8,15 @@ import ContactPage from "./pages/Contact";
 import PortfolioDetail from "./pages/PortfolioDetail";
 
 // ✅ Import each static service page
-import Videography from "./pages/services/Videography";
-import Photography from "./pages/services/Photography";
-import SocialMedia from "./pages/services/SocialMedia";
-import Branding from "./pages/services/Branding";
-import GraphicDesign from "./pages/services/GraphicDesign";
-import Advertising from "./pages/services/Advertising";
-import WebDevelopment from "./pages/services/WebDevelopment";
-import ThreeD from "./pages/services/ThreeD";
-import Strategy from "./pages/services/Strategy";
+// import Videography from "./pages/services/Videography";
+// import Photography from "./pages/services/Photography";
+// import SocialMedia from "./pages/services/SocialMedia";
+// import Branding from "./pages/services/Branding";
+// import GraphicDesign from "./pages/services/GraphicDesign";
+// import Advertising from "./pages/services/Advertising";
+// import WebDevelopment from "./pages/services/WebDevelopment";
+// import ThreeD from "./pages/services/ThreeD";
+// import Strategy from "./pages/services/Strategy";
 import Media from "./pages/Media";
 import ServiceInnerPage from "./pages/services/ServiceInnerPage"; // Dynamic service page
 import StudioPage from "./pages/studio";

@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { siteData } from "../data";
 import "swiper/css";
-import { ArrowRightIcon } from "@heroicons/react/16/solid";
+import "swiper/css/navigation";
+import { ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import { useNavigate } from "react-router-dom";
 
 const Products = () => {
   const { products } = siteData;
   const navigate = useNavigate();
+  const swiperRef = useRef(null);
+
+  const handlePrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
+
+  const handleNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  };
 
   return (
     <section className="py-10">
@@ -20,25 +34,45 @@ const Products = () => {
         </div>
       </div>
 
-      <Swiper
-        modules={[Autoplay]}
-        slidesPerView={1.5}
-        spaceBetween={16}
-        loop={true}
-        speed={5000}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true, // hover pause works
-        }}
-        breakpoints={{
-          1280: { slidesPerView: 4.5 },
-          // 1024: { slidesPerView: 3.5 },
-          768: { slidesPerView: 3.5 },
-          480: { slidesPerView: 2.5 },
-        }}
-        className="products-swiper"
-      >
+      <div className="relative group/carousel">
+        {/* Previous Button */}
+        <button
+          onClick={handlePrev}
+          className="absolute left-0 top-0 bottom-0 z-20 w-12 md:w-16 bg-transparent hover:backdrop-blur-sm flex items-center justify-center transition-all duration-300"
+        >
+          <ChevronLeftIcon className="w-8 h-8 md:w-10 md:h-10 text-white drop-shadow-lg" />
+        </button>
+
+        {/* Next Button */}
+        <button
+          onClick={handleNext}
+          className="absolute right-0 top-0 bottom-0 z-20 w-12 md:w-16 bg-transparent hover:backdrop-blur-sm flex items-center justify-center transition-all duration-300"
+        >
+          <ChevronRightIcon className="w-8 h-8 md:w-10 md:h-10 text-white drop-shadow-lg" />
+        </button>
+
+        <Swiper
+          modules={[Autoplay]}
+          slidesPerView={1.5}
+          spaceBetween={16}
+          loop={true}
+          speed={800}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            1280: { slidesPerView: 4.5 },
+            // 1024: { slidesPerView: 3.5 },
+            768: { slidesPerView: 3.5 },
+            480: { slidesPerView: 2.5 },
+          }}
+          className="products-swiper"
+        >
         {products.list.map((item, index) => (
           <SwiperSlide key={index}>
             <div
@@ -78,7 +112,8 @@ const Products = () => {
         >
           See More <ArrowRightIcon className="w-5 h-5 ml-2" />
         </button>
-      </Swiper>
+        </Swiper>
+      </div>
     </section>
   );
 };
