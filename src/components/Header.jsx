@@ -20,8 +20,7 @@ const Header = () => {
   const navLinks = [
     {
       name: "Studio",
-      path: "https://studioparramatta.com.au/",
-      isExternal: true,
+       path: "/studio", isExternal: false
     },
     { name: "Work", path: "/work", isExternal: false },
     { name: "About", path: "/about", isExternal: false },

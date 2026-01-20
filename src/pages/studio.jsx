@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import LandingArea from "../components/work/LandingArea";
-import PortfolioSection from "../components/work/PortfolioSection";
+
 import ContactUs from "../components/ContactUs";
+import FreeConsultation from "../components/FreeConsultation";
+import LandscapeVideo from "../components/studio/studioLanding";
+import StudioLandingArea from "../components/studio/StudioLandingArea";
 
 const StudioPage = () => {
   return (
     <main>
-      <LandingArea />
-      <PortfolioSection />
+      <StudioLandingArea />
+      <LandscapeVideo/>
+      <FreeConsultation />
       <ContactUs />
     </main>
   );
