@@ -1528,7 +1528,7 @@ export const siteData = {
           slug: "social-media",
           title: "Social Media",
           description: "Content made for today’s feeds. We create work that stops the scroll and sparks engagement.",
-          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/social+media+new.mp4",
+          video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/SOCIAL+MEDIA+2.mp4",
           // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/social+media.mp4",
           gallery: [
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/image+43.png",
