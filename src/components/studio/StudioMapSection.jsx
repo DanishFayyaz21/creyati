@@ -29,12 +29,13 @@ const StudioMapSection = () => {
       </div>
 
       {/* Booking Form Modal */}
-      
+
       {isBookingFormOpen && (
         <StudioBookingForm onClose={() => setIsBookingFormOpen(false)} />
       )}
 
-      <div className="w-full lg:w-4/5 bg-black text-gray-200 px-1 py-4 sm:px-6 md:px-8 rounded-lg">
+
+      <div className="w-full mt-6 lg:w-4/5 bg-black text-gray-200 px-1 py-4 sm:px-6  rounded-lg">
         <div className="flex  md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-4 md:mb-5">
           <h1 className="text-lg sm:text-3xl md:text-4xl font-bold text-white">
             Studio Parramatta
@@ -187,6 +188,75 @@ const StudioMapSection = () => {
           </div>
         </div>
       </div>
+      {/* Studio Gallery Section */}
+      <div className="w-full lg:w-4/5 mt-8 md:mt-12">
+        <div className="grid gap-3">
+          {/* First group of 5 images */}
+          <div className="grid gap-3">
+            {/* First row */}
+            <div className="grid grid-cols-12 gap-3">
+              <div className="col-span-12 lg:col-span-5">
+                <img
+                  src="https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/studio/hf_20260121_123812_65f88fe9-9411-4064-8703-5bd6816a810c.png"
+                  alt="Studio 1"
+                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
+                />
+              </div>
+              <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
+                <img
+                  src="https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/studio/hf_20260121_125445_acd4575c-a04a-46bf-8d6d-2ef183bba8a1.png"
+                  alt="Studio 2"
+                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
+                />
+                <img
+                  src="https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/studio/hf_20260121_125526_9338cffa-f393-44ed-9f77-e593a383b673.png"
+                  alt="Studio 3"
+                  className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
+                />
+              </div>
+            </div>
+
+            {/* Second row */}
+            <div className="grid grid-cols-12 gap-3">
+              <div className="col-span-6 lg:col-span-5">
+                <img
+                  src="https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/studio/hf_20260121_120954_37218de3-bf9a-4414-8cca-e255d09fe450.png"
+                  alt="Studio 4"
+                  className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="col-span-6 lg:col-span-7">
+                <img
+                  src="https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/studio/hf_20260121_121414_3e1c01e0-e50a-4497-aaf3-4e2ab1654130.png"
+                  alt="Studio 5"
+                  className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Second group - remaining 2 images */}
+          <div className="grid gap-3">
+            <div className="grid grid-cols-12 gap-3">
+              <div className="col-span-6 lg:col-span-5">
+                <img
+                  src="https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/studio/hf_20260121_121515_2ed96598-591d-4492-90cd-f7caa78f0b75.png"
+                  alt="Studio 6"
+                  className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="col-span-6 lg:col-span-7">
+                <img
+                  src="https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/studio/hf_20260121_121818_fa37ba01-e1fb-44b6-b4e6-149782f36ffa.png"
+                  alt="Studio 7"
+                  className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 
       <iframe

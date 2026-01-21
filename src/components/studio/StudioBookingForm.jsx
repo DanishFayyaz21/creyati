@@ -150,11 +150,11 @@ ${formData.message}
     <>
       <Toaster position="top-center" />
       <div
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+        className="fixed inset-0 z-[9999]  flex items-center justify-center bg-black bg-opacity-80"
         onClick={closeModal}
       >
         <div
-          className="relative bg-black w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl"
+          className="relative mx-2  bg-black w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close Button */}
@@ -171,14 +171,14 @@ ${formData.message}
           </div>
 
           {/* Modal Content */}
-          <div className="p-8">
-            <p className="text-sm text-gray-400 mb-6">* indicates required field</p>
+          <div className="p-4 md:p-8">
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
+
+            <form className=" space-y-2 md:space-y-6" onSubmit={handleSubmit}>
               {/* First Name and Last Name */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-white font-semibold mb-2">
+                  <label className="block text-[12px] md:text-lg text-white font-semibold mb-2">
                     First name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -191,7 +191,7 @@ ${formData.message}
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">
+                  <label className="block text-[12px] md:text-lg text-white font-semibold mb-2">
                     Last name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -207,25 +207,25 @@ ${formData.message}
 
               {/* Type Dropdown */}
               <div>
-                <label className="block text-white font-semibold mb-2">
+                <label className="block text-[12px] md:text-lg text-white font-semibold mb-2">
                   Type <span className="text-red-500">*</span>
                 </label>
                 <select
                   name="enquiryType"
                   value={formData.enquiryType}
                   onChange={handleChange}
-                  className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white"
+                  className="w-full text-[12px] md:text-lg bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white"
                 >
-                  <option value="I have a general enquiry" className="bg-black">I have a general enquiry</option>
-                  <option value="Studio Booking" className="bg-black">Studio Booking</option>
-                  <option value="Pricing Information" className="bg-black">Pricing Information</option>
+                  <option value="I have a general enquiry" className="bg-black text-xs">I have a general enquiry</option>
+                  <option value="Studio Booking" className="bg-black text-xs">Studio Booking</option>
+                  <option value="Pricing Information" className="bg-black text-xs">Pricing Information</option>
                 </select>
               </div>
 
               {/* Phone and Email */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-white font-semibold mb-2">Phone</label>
+                  <label className="block text-[12px] md:text-lg text-white font-semibold mb-2">Phone</label>
                   <input
                     type="tel"
                     name="phone"
@@ -235,7 +235,7 @@ ${formData.message}
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">
+                  <label className="block text-[12px] md:text-lg text-white font-semibold mb-2">
                     Email <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -251,14 +251,14 @@ ${formData.message}
 
               {/* Message */}
               <div>
-                <label className="block text-white font-semibold mb-2">
+                <label className="block text-[12px] md:text-lg text-white font-semibold mb-2">
                   Message <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows="6"
+                  rows="3"
                   className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white resize-none"
                   required
                 ></textarea>
@@ -269,14 +269,14 @@ ${formData.message}
                 <button
                   type="button"
                   onClick={closeModal}
-                  className="text-white underline hover:text-gray-400"
+                  className="text-white underline hover:text-gray-400 text-[12px] md:text-lg"
                   disabled={isSubmitting}
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="bg-white text-black px-8 py-3 font-semibold rounded hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-white text-black px-8 py-3 text-[12px] md:text-lg font-semibold rounded hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Enquire now"}
