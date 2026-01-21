@@ -165,29 +165,23 @@ export default function Media() {
                     return (
                       <div
                         key={rowIndex}
-                        className="grid gap-6 lg:grid-cols-12"
+                        className={`grid gap-6 lg:grid-cols-12 ${rowIndex === 2 ? 'lg:grid-cols-1' : ''}`}
                       >
-                        {rowVideos.length === 1 ? (
-                          <div className="relative lg:col-span-12">
-                            <VideoPlayer src={rowVideos[0]} />
-                          </div>
-                        ) : rowVideos.length === 2 ? (
-                          rowVideos.map((v, i) => (
-                            <VideoPlayer
-                              key={i}
-                              src={v}
-                              className="lg:col-span-6"
-                            />
-                          ))
-                        ) : (
-                          rowVideos.map((v, i) => (
-                            <VideoPlayer
-                              key={i}
-                              src={v}
-                              className="lg:col-span-4"
-                            />
-                          ))
-                        )}
+                        {rowIndex < 2 && rowVideos.map((v, i) => (
+                          <VideoPlayer
+                            key={i}
+                            src={v}
+                            className="lg:col-span-6 aspect-[9/16]"
+                          />
+                        ))}
+
+                        {rowIndex === 2 && rowVideos.map((v, i) => (
+                          <VideoPlayer
+                            key={i}
+                            src={v}
+                            className="lg:col-span-12 aspect-video"
+                          />
+                        ))}
                       </div>
                     );
                   })
