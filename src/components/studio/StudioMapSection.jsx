@@ -29,6 +29,7 @@ const StudioMapSection = () => {
       </div>
 
       {/* Booking Form Modal */}
+      
       {isBookingFormOpen && (
         <StudioBookingForm onClose={() => setIsBookingFormOpen(false)} />
       )}
