@@ -36,7 +36,7 @@ const ServicesDetailInner = () => {
               </div>
               <div className="border-[0.5px] border-white px-10 md:px-14 py-8">
                 <h2 className="text-[22px] font-normal uppercase lg:text-3xl text-fill-white mb-5">
-                  WHAT TO EXPECT
+                  WHAT TO EXPECTrrrr
                 </h2>
                 {service.expectations && service.expectations.length > 0 ? (
                   <ul className="list-disc list-inside space-y-3 text-white font-urbanist">
