@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const StudioBookingForm = () => {
+const StudioBookingForm = ({ onClose }) => {
   const [selectedDate, setSelectedDate] = useState("");
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
@@ -30,145 +30,127 @@ const StudioBookingForm = () => {
     setSelectedDate(fullDate);
   };
 
+  const closeModal = () => {
+    if (onClose) onClose();
+  };
+
   return (
-    <div style={wrapper}>
-      {/* FORM */}
-      <form style={form}>
-        <h2>Book Your Studio</h2>
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+      onClick={closeModal}
+    >
+      <div 
+        className="relative bg-black w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close Button */}
+        <button
+          onClick={closeModal}
+          className="absolute top-4 right-4 text-white text-3xl hover:text-gray-400 z-10"
+        >
+          ×
+        </button>
 
-        <input placeholder="Your Name" style={input} />
-        <input placeholder="Your Email" style={input} />
-
-        <input
-          placeholder="Selected Date"
-          value={selectedDate}
-          readOnly
-          style={input}
-        />
-
-        <textarea placeholder="Note" rows="4" style={input} />
-
-        <button style={button}>Book Now</button>
-      </form>
-
-      {/* CALENDAR */}
-      <div style={calendar}>
-        <div style={calendarHeader}>
-          <button onClick={() => changeMonth(-1)} style={navBtn}>‹</button>
-          <h3>
-            {currentMonth.toLocaleString("default", { month: "long" })} {year}
-          </h3>
-          <button onClick={() => changeMonth(1)} style={navBtn}>›</button>
-        </div>
-
-        <div style={daysGrid}>
-          {["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map(d => (
-            <div key={d} style={dayName}>{d}</div>
-          ))}
-
-          {dates.map((day, i) => (
-            <div
-              key={i}
-              onClick={() => selectDate(day)}
-              style={{
-                ...dayBox,
-                background:
-                  selectedDate.endsWith(`-${day}`) ? "#fff" : "#111",
-                color:
-                  selectedDate.endsWith(`-${day}`) ? "#000" : "#fff",
-                cursor: day ? "pointer" : "default",
-              }}
-            >
-              {day}
+            {/* Modal Header */}
+            <div className="border-b border-gray-800 px-8 py-6">
+              <h2 className="text-2xl font-semibold text-white text-center">Send enquiry</h2>
             </div>
-          ))}
+
+            {/* Modal Content */}
+            <div className="p-8">
+              <p className="text-sm text-gray-400 mb-6">* indicates required field</p>
+
+              <form className="space-y-6">
+                {/* First Name and Last Name */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-white font-semibold mb-2">
+                      First name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-white font-semibold mb-2">
+                      Last name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Type Dropdown */}
+                <div>
+                  <label className="block text-white font-semibold mb-2">
+                    Type <span className="text-red-500">*</span>
+                  </label>
+                  <select className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white">
+                    <option value="" className="bg-black">I have a general enquiry</option>
+                    <option value="booking" className="bg-black">Studio Booking</option>
+                    <option value="pricing" className="bg-black">Pricing Information</option>
+                  </select>
+                </div>
+
+                {/* Phone and Email */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-white font-semibold mb-2">Phone</label>
+                    <input
+                      type="tel"
+                      className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-white font-semibold mb-2">
+                      Email <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label className="block text-white font-semibold mb-2">
+                    Message <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    rows="6"
+                    className="w-full bg-transparent border border-gray-600 text-white px-4 py-3 rounded focus:outline-none focus:border-white resize-none"
+                    required
+                  ></textarea>
+                </div>
+
+                {/* Buttons */}
+                <div className="flex justify-between items-center pt-4 border-t border-gray-800">
+                  <button
+                    type="button"
+                    onClick={closeModal}
+                    className="text-white underline hover:text-gray-400"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="bg-white text-black px-8 py-3 font-semibold rounded hover:bg-gray-200 transition-colors"
+                  >
+                    Enquire now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
   );
-};
-
-/* ---------- STYLES ---------- */
-
-const wrapper = {
-  display: "flex",
-  gap: "40px",
-  padding: "40px",
-  background: "#000",
-  color: "#fff",
-  minHeight: "100vh",
-};
-
-const form = {
-  width: "400px",
-  background: "#111",
-  padding: "30px",
-  borderRadius: "12px",
-  display: "flex",
-  flexDirection: "column",
-  gap: "20px",
-};
-
-const calendar = {
-  width: "400px",
-  background: "#111",
-  padding: "20px",
-  borderRadius: "12px",
-  position: "sticky",
-  top: "40px",
-};
-
-const input = {
-  background: "transparent",
-  border: "1px solid #444",
-  padding: "12px",
-  color: "#fff",
-  borderRadius: "6px",
-};
-
-const button = {
-  background: "#fff",
-  color: "#000",
-  padding: "12px",
-  border: "none",
-  fontWeight: "600",
-  cursor: "pointer",
-};
-
-const calendarHeader = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: "20px",
-};
-
-const navBtn = {
-  background: "#222",
-  color: "#fff",
-  border: "none",
-  padding: "8px 12px",
-  cursor: "pointer",
-};
-
-const daysGrid = {
-  display: "grid",
-  gridTemplateColumns: "repeat(7, 1fr)",
-  gap: "10px",
-};
-
-const dayName = {
-  textAlign: "center",
-  fontSize: "12px",
-  opacity: 0.7,
-};
-
-const dayBox = {
-  height: "45px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  borderRadius: "6px",
-  background: "#111",
 };
 
 export default StudioBookingForm;

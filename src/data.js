@@ -1531,15 +1531,11 @@ export const siteData = {
           video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/social+media+new.mp4",
           // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/social+media.mp4",
           gallery: [
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/1+-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/2+-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/3-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/4+-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/5-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/6-n.png",
-
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/image+43.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/screencapture-instagram-cerroniaustralia-2025-09-05-17_37_57_page-0004+1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/new1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/new2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/new4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Social-media/new5.png"
           ],
           expectations: [
             "Brand & Commercial Films",
@@ -1558,25 +1554,23 @@ export const siteData = {
           // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/branding.mp4",
           video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/branding+new.mp4",
           gallery: [
-            // new links
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/1-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/2-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/3-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/4-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/5-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/6-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/7-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/8-n.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/5.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/6.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/7.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/web/8.png",
 
-            // old links
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/1.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/2.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/9.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/4.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/5.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/6.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/7.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/8.png",
+          ],
+          mobileGallery: [
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/mobile/1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/mobile/2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/mobile/3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/mobile/4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/mobile/5.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Branding/mobile/6.png"
           ],
           expectations: [
             "Bespoke logo & visual identity systems",
@@ -1595,7 +1589,6 @@ export const siteData = {
           // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/Graphic+Design.mp4",
           gallery:
             [
-              // new 
               "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/1.png",
               "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/2.png",
               "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/3.png",
@@ -1603,34 +1596,15 @@ export const siteData = {
               "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/5.png",
               "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/6.png",
               "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/7.png",
-
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/1-n.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/2-n.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/3-n.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/4-n.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/5-n.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/6-n.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/7-n.png",
-
-              // old
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/1.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/2.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/3.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/4.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/5.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/6.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/7.png",
-              // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/8.png",
+              "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/8.png"
             ],
           mobileGallery: [
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/6.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/1.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/2.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/3.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/4.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/5.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/web/mobile/7.png",
-
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/mobile/1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/mobile/2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/mobile/3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/mobile/4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/mobile/5.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Graphic-design/mobile/6.png"
           ],
           expectations: [
             "Campaign graphics",
@@ -1671,19 +1645,17 @@ export const siteData = {
           video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/website+new.mp4",
           // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/website.mp4",
           gallery: [
-            // new
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/1-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/2-n.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/3-n.png",
-            // old
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Mobile-site/service-page/Website-development/Group+171.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Mobile-site/service-page/Website-development/Group+172.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Mobile-site/service-page/Website-development/Group+173.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new5.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new6.png"
           ],
           mobileGallery: [
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/Group+168.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/Group+169.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/Group+170.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/3.png"
           ],
 
           expectations: [
@@ -1702,17 +1674,16 @@ export const siteData = {
           // video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/3D.mp4",
           video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/3D+new.mp4",
           gallery: [
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/NO+12.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/072a98a4-d354-4991-94ab-68ecdcd35cf9+2.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/hf_20260116_220918_d131f4af-50cb-4d71-9b0a-58242a128708.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/hf_20260116_220613_db6378ca-cd01-41ca-8664-e22bf5936674.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/web/1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/web/2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/web/3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/web/4.png"
           ],
           mobileGallery: [
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/hf_20260116_220613_db6378ca-cd01-41ca-8664-e22bf5936674+1.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/hf_20260116_220918_d131f4af-50cb-4d71-9b0a-58242a128708+2.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/NO+12.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/072a98a4-d354-4991-94ab-68ecdcd35cf9+2.png"
-          ],
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/3D/mobile/4.png"],
           expectations: [
             "Product modeling & rendering",
             "3D animations & motion graphics",
@@ -1728,14 +1699,13 @@ export const siteData = {
             "Creative Strategy that connects vision with impact. Behind every project is a strategy built on research, insight, and direction. We shape creative concepts that align with your goals, connect with your audience, and build long-term growth for your brand.",
           video: "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Homepage/services/Strategy.mp4",
           gallery: [
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
-            "https://placehold.co/1920x1080",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Strategy/new1.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Strategy/new2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Strategy/new3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Strategy/new4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Strategy/new5.png",
+            // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Strategy/new6.png",
+            // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Strategy/new7.png"
           ],
           expectations: [
             "Brand & Campaign strategy",
