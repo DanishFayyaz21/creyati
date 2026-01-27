@@ -43,7 +43,8 @@ const ContactUs = () => {
       if (
         !EMAILJS_CONFIG.SERVICE_ID ||
         !EMAILJS_CONFIG.TEMPLATE_ID ||
-        !EMAILJS_CONFIG.PUBLIC_KEY
+        !EMAILJS_CONFIG.PUBLIC_KEY ||
+        !EMAILJS_CONFIG.SENDER_EMAIL
       ) {
         throw new Error(
           "EmailJS configuration is missing. Please check your environment variables."
@@ -53,9 +54,12 @@ const ContactUs = () => {
       // Prepare template parameters
       const templateParams = {
         [TEMPLATE_PARAMS.from_name]: `${values.firstName} ${values.lastName}`,
-        [TEMPLATE_PARAMS.from_email]: values.email,
+        // Use a verified sender to satisfy Zoho relay rules
+        [TEMPLATE_PARAMS.from_email]: EMAILJS_CONFIG.SENDER_EMAIL,
         [TEMPLATE_PARAMS.message]: values.message,
         [TEMPLATE_PARAMS.to_name]: "Creyeti Team", // You can customize this
+        // Set reply-to so responses go to the user's email
+        [TEMPLATE_PARAMS.reply_to]: values.email,
       };
 
       // Show loading toast

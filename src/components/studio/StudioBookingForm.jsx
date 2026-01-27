@@ -36,7 +36,8 @@ const StudioBookingForm = ({ onClose }) => {
       if (
         !EMAILJS_CONFIG.SERVICE_ID ||
         !EMAILJS_CONFIG.TEMPLATE_ID ||
-        !EMAILJS_CONFIG.PUBLIC_KEY
+        !EMAILJS_CONFIG.PUBLIC_KEY ||
+        !EMAILJS_CONFIG.SENDER_EMAIL
       ) {
         throw new Error(
           "EmailJS configuration is missing. Please check your environment variables."
@@ -46,7 +47,8 @@ const StudioBookingForm = ({ onClose }) => {
       // Prepare template parameters
       const templateParams = {
         [TEMPLATE_PARAMS.from_name]: `${formData.firstName} ${formData.lastName}`,
-        [TEMPLATE_PARAMS.from_email]: formData.email,
+        // Use verified sender to satisfy Zoho relay requirements
+        [TEMPLATE_PARAMS.from_email]: EMAILJS_CONFIG.SENDER_EMAIL,
         [TEMPLATE_PARAMS.message]: `
 Enquiry Type: ${formData.enquiryType}
 Phone: ${formData.phone || 'Not provided'}
@@ -55,6 +57,8 @@ Message:
 ${formData.message}
         `,
         [TEMPLATE_PARAMS.to_name]: "Creyeti Team",
+        // Ensure replies land in the user's inbox
+        [TEMPLATE_PARAMS.reply_to]: formData.email,
       };
 
       // Show loading toast

@@ -29,15 +29,22 @@ const FloatingConsultation = () => {
     try {
       setIsSubmitting(true);
 
-      if (!EMAILJS_CONFIG.SERVICE_ID || !EMAILJS_CONFIG.TEMPLATE_ID || !EMAILJS_CONFIG.PUBLIC_KEY) {
+      if (
+        !EMAILJS_CONFIG.SERVICE_ID ||
+        !EMAILJS_CONFIG.TEMPLATE_ID ||
+        !EMAILJS_CONFIG.PUBLIC_KEY ||
+        !EMAILJS_CONFIG.SENDER_EMAIL
+      ) {
         throw new Error("EmailJS configuration is missing. Please check your environment variables.");
       }
 
       const templateParams = {
-        ...TEMPLATE_PARAMS,
-        from_name: `${values.firstName} ${values.lastName}`,
-        from_email: values.email,
-        message: values.message,
+        [TEMPLATE_PARAMS.from_name]: `${values.firstName} ${values.lastName}`,
+        // Use verified sender to satisfy Zoho relay requirements
+        [TEMPLATE_PARAMS.from_email]: EMAILJS_CONFIG.SENDER_EMAIL,
+        [TEMPLATE_PARAMS.message]: values.message,
+        // Ensure replies land in the user's inbox
+        [TEMPLATE_PARAMS.reply_to]: values.email,
       };
 
       await emailjs.send(

@@ -264,7 +264,12 @@ export default function FreeConsultation() {
     }
 
     // Check if EmailJS is properly configured
-    if (!EMAILJS_CONFIG.SERVICE_ID || !EMAILJS_CONFIG.TEMPLATE_ID || !EMAILJS_CONFIG.PUBLIC_KEY) {
+    if (
+      !EMAILJS_CONFIG.SERVICE_ID ||
+      !EMAILJS_CONFIG.TEMPLATE_ID ||
+      !EMAILJS_CONFIG.PUBLIC_KEY ||
+      !EMAILJS_CONFIG.SENDER_EMAIL
+    ) {
       setStatus({
         state: "error",
         message: "EmailJS configuration is missing. Please check your environment variables.",
@@ -277,6 +282,10 @@ export default function FreeConsultation() {
     const payload = {
       name: form.name.trim(),
       email: form.email.trim(),
+      // Use verified sender to satisfy Zoho relay requirements
+      from_email: EMAILJS_CONFIG.SENDER_EMAIL,
+      // Ensure replies land in the user's inbox
+      reply_to: form.email.trim(),
       date: formatPrettyDate(selectedDate),
       time: selectedSlot,
       niche: selectedNiche,
