@@ -40,7 +40,7 @@ export default function VideoPlayer({ src, className = "" }) {
         onCanPlay={() => setIsLoading(false)}
         onWaiting={() => setIsLoading(true)}
         onPlaying={() => setIsLoading(false)}
-        className="w-full h-[240px] sm:h-[320px] lg:h-[420px] object-cover"
+        className="absolute inset-0 w-full h-full object-contain bg-black"
       />
 
       <button
