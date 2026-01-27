@@ -18,6 +18,10 @@ const validationSchema = Yup.object({
   email: Yup.string()
     .email("Invalid email address")
     .required("Email is required"),
+  phone: Yup.string()
+    .trim()
+    .matches(/^[0-9+()\-\s]{7,20}$/, "Enter a valid phone number")
+    .optional(),
   message: Yup.string()
     .min(10, "Message must be at least 10 characters")
     .required("Message is required"),
@@ -28,6 +32,7 @@ const initialValues = {
   firstName: "",
   lastName: "",
   email: "",
+  phone: "",
   message: "",
 };
 
@@ -56,7 +61,7 @@ const ContactUs = () => {
         [TEMPLATE_PARAMS.from_name]: `${values.firstName} ${values.lastName}`,
         // Use a verified sender to satisfy Zoho relay rules
         [TEMPLATE_PARAMS.from_email]: EMAILJS_CONFIG.SENDER_EMAIL,
-        [TEMPLATE_PARAMS.message]: values.message,
+        [TEMPLATE_PARAMS.message]: `Phone: ${values.phone || "Not provided"}\n\nMessage:\n${values.message}`,
         [TEMPLATE_PARAMS.to_name]: "Creyeti Team", // You can customize this
         // Set reply-to so responses go to the user's email
         [TEMPLATE_PARAMS.reply_to]: values.email,
@@ -240,6 +245,28 @@ const ContactUs = () => {
                     />
                     <ErrorMessage
                       name="email"
+                      component="div"
+                      className="text-red-400 text-sm mt-1"
+                    />
+                  </div>
+
+                  {/* Phone (optional) */}
+                  <div>
+                    <label className="block text-white font-semibold">
+                      Phone <span className="text-gray-400 text-sm">(optional)</span>
+                    </label>
+                    <Field
+                      type="tel"
+                      name="phone"
+                      className={`mt-2 w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${
+                        errors.phone && touched.phone
+                          ? "border-red-500"
+                          : "border-gray-500 focus:border-white"
+                      }`}
+                      placeholder="e.g. +1 555 123 4567"
+                    />
+                    <ErrorMessage
+                      name="phone"
                       component="div"
                       className="text-red-400 text-sm mt-1"
                     />
