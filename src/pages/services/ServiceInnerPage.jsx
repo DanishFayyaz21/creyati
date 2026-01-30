@@ -48,102 +48,107 @@ const ServiceInnerPage = () => {
                         </div>
                     </div>
 
-                    {/* Gallery */}
-                    <div className="grid gap-3 pt-16">
-                        {Array.from({
-                            length: Math.ceil(
-                                (window.innerWidth < 1024 && service?.mobileGallery?.length > 0
+                    {/* Gallery (hidden for 3d, graphic-design, branding) */}
+                    {!["3d", "graphic-design", "branding"].includes(service.slug) && (
+                        <div className="grid gap-3 pt-16">
+                            {Array.from({
+                                length: Math.ceil(
+                                    (window.innerWidth < 1024 && service?.mobileGallery?.length > 0
+                                        ? service?.mobileGallery
+                                        : service?.gallery
+                                    ).length / 5
+                                )
+                            }).map((_, groupIndex) => {
+                                const startIndex = groupIndex * 5;
+                                const groupMedia = (window?.innerWidth < 1024 && service?.mobileGallery?.length > 0
                                     ? service?.mobileGallery
                                     : service?.gallery
-                                ).length / 5
-                            )
-                        }).map((_, groupIndex) => {
-                            const startIndex = groupIndex * 5;
-                            const groupMedia = (window?.innerWidth < 1024 && service?.mobileGallery?.length > 0
-                                ? service?.mobileGallery
-                                : service?.gallery
-                            ).slice(startIndex, startIndex + 5);
+                                ).slice(startIndex, startIndex + 5);
 
-                            return (
-                                <div key={groupIndex} className="grid gap-3">
-                                    {/* First row: 1 large media + 2 stacked media */}
-                                    {groupMedia.length >= 1 && (
-                                        <div className="grid grid-cols-12 gap-3">
-                                            <div className="col-span-12 lg:col-span-5">
-                                                {groupMedia[0].endsWith(".mp4") || groupMedia[0].endsWith(".webm") || groupMedia[0].endsWith(".MP4") ? (
-                                                    <video
-                                                        src={groupMedia[0]}
-                                                        autoPlay
-                                                        loop
-                                                        muted
-                                                        playsInline
-                                                        className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
-                                                    />
-                                                ) : (
-                                                    <img
-                                                        src={groupMedia[0]}
-                                                        alt={`media-${startIndex}`}
-                                                        className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
-                                                    />
-                                                )}
-                                            </div>
-
-                                            {groupMedia.length >= 2 && (
-                                                <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
-                                                    {groupMedia.slice(1, 3).map((media, i) => (
-                                                        media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4") ? (
-                                                            <video
-                                                                key={i}
-                                                                src={media}
-                                                                autoPlay
-                                                                loop
-                                                                muted
-                                                                playsInline
-                                                                className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
-                                                            />
-                                                        ) : (
-                                                            <img
-                                                                key={i}
-                                                                src={media}
-                                                                alt={`media-${startIndex + i + 1}`}
-                                                                className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
-                                                            />
-                                                        )
+                                return (
+                                    <div key={groupIndex} className="grid gap-3">
+                                        {/* First row: 1 large media + 2 stacked media, but if any is video, render as full row in grid */}
+                                        {groupMedia.length >= 1 && (
+                                            groupMedia.slice(0, 3).some(media => media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4")) ? (
+                                                <div className="grid grid-cols-12 gap-3">
+                                                    {groupMedia.slice(0, 3).map((media, i) => (
+                                                        (media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4")) ? (
+                                                            <div key={i} className="col-span-12 mb-3">
+                                                                <video
+                                                                    src={media}
+                                                                    autoPlay
+                                                                    loop
+                                                                    muted
+                                                                    playsInline
+                                                                    className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                                                                />
+                                                            </div>
+                                                        ) : null
                                                     ))}
                                                 </div>
-                                            )}
-                                        </div>
-                                    )}
-
-                                    {/* Second row: 2 media side by side */}
-                                    {groupMedia.length >= 4 && (
-                                        <div className="grid grid-cols-12 gap-3">
-                                            {groupMedia.slice(3, 5).map((media, i) => (
-                                                <div key={i} className={`col-span-6 lg:col-span-${i === 0 ? 5 : 7}`}>
-                                                    {media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4") ? (
-                                                        <video
-                                                            src={media}
-                                                            autoPlay
-                                                            loop
-                                                            muted
-                                                            playsInline
-                                                            className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
-                                                        />
-                                                    ) : (
+                                            ) : (
+                                                <div className="grid grid-cols-12 gap-3">
+                                                    <div className="col-span-12 lg:col-span-5">
                                                         <img
-                                                            src={media}
-                                                            alt={`media-${startIndex + 3 + i}`}
-                                                            className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                                                            src={groupMedia[0]}
+                                                            alt={`media-${startIndex}`}
+                                                            className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
                                                         />
+                                                    </div>
+                                                    {groupMedia.length >= 2 && (
+                                                        <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
+                                                            {groupMedia.slice(1, 3).map((media, i) => (
+                                                                <img
+                                                                    key={i}
+                                                                    src={media}
+                                                                    alt={`media-${startIndex + i + 1}`}
+                                                                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
+                                                                />
+                                                            ))}
+                                                        </div>
                                                     )}
                                                 </div>
-                                            ))}
-                                        </div>
-                                    )}
-                                </div>
-                            );
-                        })}
-                    </div>
+                                            )
+                                        )}
+
+                                        {/* Second row: 2 media side by side, but if any is video, render as full row in grid */}
+                                        {groupMedia.length >= 4 && (
+                                            groupMedia.slice(3, 5).some(media => media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4")) ? (
+                                                <div className="grid grid-cols-12 gap-3">
+                                                    {groupMedia.slice(3, 5).map((media, i) => (
+                                                        (media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4")) ? (
+                                                            <div key={i} className="col-span-12 mb-3">
+                                                                <video
+                                                                    src={media}
+                                                                    autoPlay
+                                                                    loop
+                                                                    muted
+                                                                    playsInline
+                                                                    className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                                                                />
+                                                            </div>
+                                                        ) : null
+                                                    ))}
+                                                </div>
+                                            ) : (
+                                                <div className="grid grid-cols-12 gap-3">
+                                                    {groupMedia.slice(3, 5).map((media, i) => (
+                                                        <div key={i} className={`col-span-6 lg:col-span-${i === 0 ? 5 : 7}`}>
+                                                            <img
+                                                                src={media}
+                                                                alt={`media-${startIndex + 3 + i}`}
+                                                                className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
+                                                            />
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            )
+                                        )}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    )}
 
                     {/* Service Navigation */}
                     <ServiceNavigation currentSlug={slug} />

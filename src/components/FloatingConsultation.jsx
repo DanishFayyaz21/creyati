@@ -10,6 +10,7 @@ const validationSchema = Yup.object({
   firstName: Yup.string().min(2, "First name must be at least 2 characters"),
   lastName: Yup.string().min(2, "Last name must be at least 2 characters"),
   email: Yup.string().email("Invalid email address").required("Email is required"),
+  phone: Yup.string(), // Optional phone number
   message: Yup.string().min(10, "Message must be at least 10 characters").required("Message is required"),
 });
 
@@ -18,6 +19,7 @@ const initialValues = {
   firstName: "",
   lastName: "",
   email: "",
+  phone: "",
   message: "",
 };
 
@@ -45,6 +47,7 @@ const FloatingConsultation = () => {
         [TEMPLATE_PARAMS.message]: values.message,
         // Ensure replies land in the user's inbox
         [TEMPLATE_PARAMS.reply_to]: values.email,
+        phone: values.phone || '',
       };
 
       await emailjs.send(
@@ -83,7 +86,7 @@ const FloatingConsultation = () => {
        group
        cursor-pointer
        px-2"
-        aria-label="Free Consultation"
+        aria-label="Let’s Talk"
       >
         <span
           className="text-black font-bold text-[10px] sm:text-xs md:text-sm
@@ -91,7 +94,7 @@ const FloatingConsultation = () => {
          transform -rotate-90 origin-center
          group-hover:scale-105 transition-all duration-300"
         >
-          {isModalOpen ? "Close" : "Free Consult"}
+          {isModalOpen ? "Close" : "Let’s Talk"}
         </span>
       </button>
 
@@ -117,7 +120,7 @@ const FloatingConsultation = () => {
             >
               {/* Modal Header */}
               <div className="border-b-2 border-black p-4 md:p-4">
-                <h2 className="text-xl md:text-xl font-bold text-black">Free Consultation</h2>
+                <h2 className="text-xl md:text-xl font-bold text-black">Let’s Talk</h2>
               </div>
 
               {/* Modal Body */}
@@ -167,11 +170,9 @@ const FloatingConsultation = () => {
                         </ErrorMessage>
                       </div>
 
+
                       {/* Email */}
                       <div>
-                        {/* <label className="block text-black font-semibold mb-2 text-sm md:text-base">
-                          Email <span className="text-red-500">*</span>
-                        </label> */}
                         <Field
                           type="email"
                           name="email"
@@ -184,6 +185,24 @@ const FloatingConsultation = () => {
                                      ${errors.email && touched.email ? "border-red-500" : "border-gray-300"}`}
                         />
                         <ErrorMessage name="email">
+                          {(msg) => <p className="text-red-500 text-xs md:text-sm mt-1">{msg}</p>}
+                        </ErrorMessage>
+                      </div>
+
+                      {/* Phone (optional) */}
+                      <div>
+                        <Field
+                          type="tel"
+                          name="phone"
+                          placeholder="Phone (optional)"
+                          className={`w-full px-4 py-2 md:py-3 
+                                     bg-white border-2 rounded-lg md:rounded-xl
+                                     text-black placeholder-gray-400
+                                     focus:outline-none focus:border-black focus:ring-2 focus:ring-black/20
+                                     transition-all duration-200
+                                     ${errors.phone && touched.phone ? "border-red-500" : "border-gray-300"}`}
+                        />
+                        <ErrorMessage name="phone">
                           {(msg) => <p className="text-red-500 text-xs md:text-sm mt-1">{msg}</p>}
                         </ErrorMessage>
                       </div>
