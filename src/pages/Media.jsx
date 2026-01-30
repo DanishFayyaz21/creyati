@@ -10,7 +10,7 @@ export default function Media() {
   const project = siteData.portfolio.projects.find((p) => p.slug === slug);
 
   // Define arrays for brand categories
-  const brandsWithOnlyStills = ["masal","rabbana","lavanna","biks-cafe"];
+  const brandsWithOnlyStills = ["rabbana","lavanna","biks-cafe"];
   const brandsWithOnlyVideos = ["beyond-labs"];
   const brandsWithBoth = siteData.portfolio.projects
     .map((p) => p.slug)

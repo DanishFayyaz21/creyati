@@ -55,13 +55,14 @@ const Products = () => {
           modules={[Autoplay]}
           slidesPerView={1.5}
           spaceBetween={16}
-          loop={true}
-          speed={800}
+          loop={false}
+          speed={6000}
+          freeMode={{ enabled: true, momentum: false }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
           autoplay={{
-            delay: 3000,
+            delay: 0,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}

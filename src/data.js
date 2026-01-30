@@ -327,8 +327,8 @@ export const siteData = {
         category: "Gym & Fitness",
         title: "Harpah",
         video: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah.mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/Harpah+videos/1.mp4",
+          // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah.mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/Harpah+videos/2.mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/Harpah+videos/3.mp4",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/harpah/Harpah+videos/4.mp4",
@@ -630,7 +630,7 @@ export const siteData = {
           "Created scalable creative and digital systems for future product launches",
         ],
         gallery: [
-          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/1.png",
+          // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/1.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/2.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/3.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/beyond+labs/4.png",
@@ -719,6 +719,12 @@ export const siteData = {
           "Positioned Carbinite as a luxury grooming brand ready for retail distribution",
         ],
         gallery: [
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/DSC02177.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/DSC02182.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/DSC02217.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/DSC02219.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/DSC02221.jpg",
+          "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/PRODUCT-HERO-3.jpg",
           // "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/4.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/1.png",
           "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/work-page/Carbinite/2.png",
