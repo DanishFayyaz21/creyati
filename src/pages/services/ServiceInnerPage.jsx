@@ -9,7 +9,6 @@ const ServiceInnerPage = () => {
     const service = siteData.services.servicesDetail.list.find(
         (s) => s.slug === slug
     );
-    console.log("service", service);
     if (!service) return <div>Service not found</div>;
 
     return (
@@ -56,15 +55,75 @@ const ServiceInnerPage = () => {
                                     (window.innerWidth < 1024 && service?.mobileGallery?.length > 0
                                         ? service?.mobileGallery
                                         : service?.gallery
-                                    ).length / 5
+                                    ).length / (service.slug === "web-development" ? 3 : 5)
                                 )
                             }).map((_, groupIndex) => {
-                                const startIndex = groupIndex * 5;
+                                const isWebDev = service.slug === "web-development";
+                                const itemsPerRow = isWebDev ? 3 : 5;
+                                const startIndex = groupIndex * itemsPerRow;
                                 const groupMedia = (window?.innerWidth < 1024 && service?.mobileGallery?.length > 0
                                     ? service?.mobileGallery
                                     : service?.gallery
-                                ).slice(startIndex, startIndex + 5);
+                                ).slice(startIndex, startIndex + itemsPerRow);
 
+                                // Get links for web-development service
+                                const links = isWebDev 
+                                    ? (window?.innerWidth < 1024 && service?.moblinks?.length > 0
+                                        ? service?.moblinks
+                                        : service?.desktoplinks || [])
+                                    : [];
+
+                                const ImageWrapper = ({ children, index }) => {
+                                    if (isWebDev && links[index]) {
+                                        return (
+                                            <a href={links[index]} target="_blank" rel="noopener noreferrer" className="block h-full">
+                                                {children}
+                                            </a>
+                                        );
+                                    }
+                                    return children;
+                                };
+                                
+                                const imageClass = isWebDev 
+                                    ? "rounded-lg lg:rounded-[25px] w-full h-full object-contain bg-black p-4"
+                                    : "rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top";
+
+                                // Special layout for web-development on desktop
+                                if (isWebDev && window.innerWidth >= 1024) {
+                                    return (
+                                        <div key={groupIndex} className="grid gap-3">
+                                            {/* 3 images in a row for web-development */}
+                                            {groupMedia.length >= 1 && (
+                                                <div className="grid grid-cols-3 gap-3">
+                                                    {groupMedia.map((media, i) => (
+                                                        (media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4")) ? (
+                                                            <div key={i} className="col-span-1">
+                                                                <video
+                                                                    src={media}
+                                                                    autoPlay
+                                                                    loop
+                                                                    muted
+                                                                    playsInline
+                                                                    className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                                                                />
+                                                            </div>
+                                                        ) : (
+                                                            <ImageWrapper key={i} index={startIndex + i}>
+                                                                <img
+                                                                    src={media}
+                                                                    alt={`media-${startIndex + i}`}
+                                                                    className={`${imageClass} h-[300px]`}
+                                                                />
+                                                            </ImageWrapper>
+                                                        )
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                }
+
+                                // Default layout for other services and mobile
                                 return (
                                     <div key={groupIndex} className="grid gap-3">
                                         {/* First row: 1 large media + 2 stacked media, but if any is video, render as full row in grid */}
@@ -89,21 +148,24 @@ const ServiceInnerPage = () => {
                                             ) : (
                                                 <div className="grid grid-cols-12 gap-3">
                                                     <div className="col-span-12 lg:col-span-5">
-                                                        <img
-                                                            src={groupMedia[0]}
-                                                            alt={`media-${startIndex}`}
-                                                            className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
-                                                        />
+                                                        <ImageWrapper index={startIndex}>
+                                                            <img
+                                                                src={groupMedia[0]}
+                                                                alt={`media-${startIndex}`}
+                                                                className={`${imageClass} max-h-[576px]`}
+                                                            />
+                                                        </ImageWrapper>
                                                     </div>
                                                     {groupMedia.length >= 2 && (
                                                         <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
                                                             {groupMedia.slice(1, 3).map((media, i) => (
-                                                                <img
-                                                                    key={i}
-                                                                    src={media}
-                                                                    alt={`media-${startIndex + i + 1}`}
-                                                                    className="rounded-lg lg:rounded-[25px] w-full h-full max-h-[576px] object-cover object-top"
-                                                                />
+                                                                <ImageWrapper key={i} index={startIndex + i + 1}>
+                                                                    <img
+                                                                        src={media}
+                                                                        alt={`media-${startIndex + i + 1}`}
+                                                                        className={`${imageClass} max-h-[576px]`}
+                                                                    />
+                                                                </ImageWrapper>
                                                             ))}
                                                         </div>
                                                     )}
@@ -134,11 +196,13 @@ const ServiceInnerPage = () => {
                                                 <div className="grid grid-cols-12 gap-3">
                                                     {groupMedia.slice(3, 5).map((media, i) => (
                                                         <div key={i} className={`col-span-6 lg:col-span-${i === 0 ? 5 : 7}`}>
-                                                            <img
-                                                                src={media}
-                                                                alt={`media-${startIndex + 3 + i}`}
-                                                                className="rounded-lg lg:rounded-[25px] w-full h-full object-cover object-top"
-                                                            />
+                                                            <ImageWrapper index={startIndex + 3 + i}>
+                                                                <img
+                                                                    src={media}
+                                                                    alt={`media-${startIndex + 3 + i}`}
+                                                                    className={imageClass}
+                                                                />
+                                                            </ImageWrapper>
                                                         </div>
                                                     ))}
                                                 </div>

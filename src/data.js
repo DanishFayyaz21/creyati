@@ -1689,9 +1689,9 @@ export const siteData = {
           gallery: [
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new1.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new2.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new5.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new3.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new4.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new5.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/web/new6.png"
           ],
           mobileGallery: [
@@ -1699,16 +1699,19 @@ export const siteData = {
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/2.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/3.png"
           ],
-links:[
-  "https://www.barberindustries.com.au/",
-   "https://www.beyondlabs.com.au",
-    "https://www.carbinite.com.au",
-     "https://www.sofreshwettowels.com.au",
-      "https://www.obelisk.au",
-      "https://www.qmanparfum.com",
-      
-
-],
+          desktoplinks: [
+            "https://www.barberindustries.com.au/",
+            "https://www.carbinite.com.au",
+            "https://www.sofreshwettowels.com.au",
+            "https://www.obelisk.au",
+            "https://www.qmanparfum.com",
+            "https://www.beyondlabs.com.au",
+          ],
+          moblinks: [
+            "https://www.sofreshwettowels.com.au",
+            "https://www.obelisk.au",
+            "https://www.qmanparfum.com",
+          ],
           expectations: [
             "Shopify, Squarespace, WordPress builds",
             "UX/UI design",
