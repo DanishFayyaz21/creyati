@@ -58,6 +58,9 @@ const FloatingConsultation = () => {
       );
 
       toast.success("Thank you! Your consultation request has been sent.");
+      if (window.fbq) {
+        window.fbq('track', 'Lead');
+      }
       resetForm();
       setIsModalOpen(false);
     } catch (error) {

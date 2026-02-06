@@ -123,6 +123,9 @@ const ContactUs = () => {
         },
       });
 
+      if (window.fbq) {
+        window.fbq('track', 'Lead');
+      }
       resetForm();
     } catch (error) {
       console.error("Error sending email:", error);
@@ -191,11 +194,10 @@ const ContactUs = () => {
                         <Field
                           type="text"
                           name="firstName"
-                          className={`w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${
-                            errors.firstName && touched.firstName
+                          className={`w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${errors.firstName && touched.firstName
                               ? "border-red-500"
                               : "border-gray-500 focus:border-white"
-                          }`}
+                            }`}
                           placeholder="John"
                         />
                         <ErrorMessage
@@ -211,11 +213,10 @@ const ContactUs = () => {
                         <Field
                           type="text"
                           name="lastName"
-                          className={`w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${
-                            errors.lastName && touched.lastName
+                          className={`w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${errors.lastName && touched.lastName
                               ? "border-red-500"
                               : "border-gray-500 focus:border-white"
-                          }`}
+                            }`}
                           placeholder="Doe"
                         />
                         <ErrorMessage
@@ -236,11 +237,10 @@ const ContactUs = () => {
                     <Field
                       type="email"
                       name="email"
-                      className={`mt-2 w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${
-                        errors.email && touched.email
+                      className={`mt-2 w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${errors.email && touched.email
                           ? "border-red-500"
                           : "border-gray-500 focus:border-white"
-                      }`}
+                        }`}
                       placeholder="you@example.com"
                     />
                     <ErrorMessage
@@ -258,11 +258,10 @@ const ContactUs = () => {
                     <Field
                       type="tel"
                       name="phone"
-                      className={`mt-2 w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${
-                        errors.phone && touched.phone
+                      className={`mt-2 w-full rounded-full border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition ${errors.phone && touched.phone
                           ? "border-red-500"
                           : "border-gray-500 focus:border-white"
-                      }`}
+                        }`}
                       placeholder="e.g. +1 555 123 4567"
                     />
                     <ErrorMessage
@@ -282,11 +281,10 @@ const ContactUs = () => {
                       as="textarea"
                       name="message"
                       rows="4"
-                      className={`mt-2 w-full rounded-3xl border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition resize-none ${
-                        errors.message && touched.message
+                      className={`mt-2 w-full rounded-3xl border bg-transparent px-5 py-3 text-white placeholder-gray-400 focus:outline-none transition resize-none ${errors.message && touched.message
                           ? "border-red-500"
                           : "border-gray-500 focus:border-white"
-                      }`}
+                        }`}
                       placeholder="Type your message here..."
                     />
                     <ErrorMessage
@@ -301,11 +299,10 @@ const ContactUs = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className={`bg-gray-200 text-black font-semibold px-10 py-3 rounded-full shadow-lg transition ${
-                        isSubmitting
+                      className={`bg-gray-200 text-black font-semibold px-10 py-3 rounded-full shadow-lg transition ${isSubmitting
                           ? "opacity-50 cursor-not-allowed"
                           : "hover:bg-white hover:shadow-xl"
-                      }`}
+                        }`}
                     >
                       {isSubmitting ? "SENDING..." : "SEND"}
                     </button>
