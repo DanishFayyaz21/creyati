@@ -21,7 +21,7 @@ const validationSchema = Yup.object({
   phone: Yup.string()
     .trim()
     .matches(/^[0-9+()\-\s]{7,20}$/, "Enter a valid phone number")
-    .optional(),
+    .required("Phone number is required"),
   message: Yup.string()
     .min(10, "Message must be at least 10 characters")
     .required("Message is required"),
@@ -250,10 +250,10 @@ const ContactUs = () => {
                     />
                   </div>
 
-                  {/* Phone (optional) */}
+                  {/* Phone */}
                   <div>
                     <label className="block text-white font-semibold">
-                      Phone <span className="text-gray-400 text-sm">(optional)</span>
+                      Phone <span className="text-gray-400 text-sm">(required)</span>
                     </label>
                     <Field
                       type="tel"

@@ -10,7 +10,10 @@ const validationSchema = Yup.object({
   firstName: Yup.string().min(2, "First name must be at least 2 characters"),
   lastName: Yup.string().min(2, "Last name must be at least 2 characters"),
   email: Yup.string().email("Invalid email address").required("Email is required"),
-  phone: Yup.string(), // Optional phone number
+  phone: Yup.string()
+    .trim()
+    .matches(/^[0-9+()\-\s]{7,20}$/, "Enter a valid phone number")
+    .required("Phone number is required"),
   message: Yup.string().min(10, "Message must be at least 10 characters").required("Message is required"),
 });
 
@@ -192,12 +195,12 @@ const FloatingConsultation = () => {
                         </ErrorMessage>
                       </div>
 
-                      {/* Phone (optional) */}
+                      {/* Phone */}
                       <div>
                         <Field
                           type="tel"
                           name="phone"
-                          placeholder="Phone (optional)"
+                          placeholder="Phone"
                           className={`w-full px-4 py-2 md:py-3 
                                      bg-white border-2 rounded-lg md:rounded-xl
                                      text-black placeholder-gray-400
