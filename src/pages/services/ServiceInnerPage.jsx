@@ -76,8 +76,12 @@ const ServiceInnerPage = () => {
                                 const ImageWrapper = ({ children, index }) => {
                                     if (isWebDev && links[index]) {
                                         return (
-                                            <a href={links[index]} target="_blank" rel="noopener noreferrer" className="block h-full">
+                                            <a href={links[index]} target="_blank" rel="noopener noreferrer" className="group block h-full relative overflow-hidden rounded-lg lg:rounded-[25px]">
                                                 {children}
+                                                <span className="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                                                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-black text-xs md:text-sm px-4 py-2 rounded-full font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                                    Visit
+                                                </span>
                                             </a>
                                         );
                                     }
