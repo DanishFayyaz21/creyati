@@ -1697,7 +1697,11 @@ export const siteData = {
           mobileGallery: [
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/1.png",
             "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/2.png",
-            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/3.png"
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/3.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/4.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/5.png",
+            "https://creyeti-assets-bucket.s3.ap-southeast-2.amazonaws.com/Service-Page/Website-development/mobile/6.png",
+
           ],
           desktoplinks: [
             "https://www.barberindustries.com.au/",
@@ -1711,6 +1715,10 @@ export const siteData = {
             "https://www.sofreshwettowels.com.au",
             "https://www.obelisk.au",
             "https://www.qmanparfum.com",
+            "https://www.barberindustries.com.au/",
+            "https://www.beyondlabs.com.au",
+            "https://www.carbinite.com.au",
+
           ],
           expectations: [
             "Shopify, Squarespace, WordPress builds",

@@ -123,6 +123,35 @@ const ServiceInnerPage = () => {
                                     );
                                 }
 
+                                if (isWebDev && window.innerWidth < 1024) {
+                                    return (
+                                        <div key={groupIndex} className="grid grid-cols-1 gap-3">
+                                            {groupMedia.map((media, i) => (
+                                                (media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".MP4")) ? (
+                                                    <div key={i} className="col-span-1">
+                                                        <video
+                                                            src={media}
+                                                            autoPlay
+                                                            loop
+                                                            muted
+                                                            playsInline
+                                                            className="rounded-lg lg:rounded-[25px] w-full h-full object-cover"
+                                                        />
+                                                    </div>
+                                                ) : (
+                                                    <ImageWrapper key={i} index={startIndex + i}>
+                                                        <img
+                                                            src={media}
+                                                            alt={`media-${startIndex + i}`}
+                                                            className={imageClass}
+                                                        />
+                                                    </ImageWrapper>
+                                                )
+                                            ))}
+                                        </div>
+                                    );
+                                }
+
                                 // Default layout for other services and mobile
                                 return (
                                     <div key={groupIndex} className="grid gap-3">
