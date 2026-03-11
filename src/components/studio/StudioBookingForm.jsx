@@ -57,7 +57,7 @@ Message:
 ${formData.message}
         `,
         [TEMPLATE_PARAMS.to_name]: "Creyeti Team",
-        // Ensure replies land in the user's inbox
+        [TEMPLATE_PARAMS.to_email]: formData.email,
         [TEMPLATE_PARAMS.reply_to]: formData.email,
       };
 

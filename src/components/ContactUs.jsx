@@ -56,15 +56,25 @@ const ContactUs = () => {
         );
       }
 
-      // Prepare template parameters
+      const userEmail = values.email.trim();
+      const userName = `${values.firstName} ${values.lastName}`.trim();
+
+      // Main template params (sends to team)
       const templateParams = {
-        [TEMPLATE_PARAMS.from_name]: `${values.firstName} ${values.lastName}`,
-        // Use a verified sender to satisfy Zoho relay rules
+        [TEMPLATE_PARAMS.from_name]: userName,
         [TEMPLATE_PARAMS.from_email]: EMAILJS_CONFIG.SENDER_EMAIL,
         [TEMPLATE_PARAMS.message]: `Phone: ${values.phone || "Not provided"}\n\nMessage:\n${values.message}`,
-        [TEMPLATE_PARAMS.to_name]: "Creyeti Team", // You can customize this
-        // Set reply-to so responses go to the user's email
-        [TEMPLATE_PARAMS.reply_to]: values.email,
+        [TEMPLATE_PARAMS.to_name]: "Creyeti Team",
+        [TEMPLATE_PARAMS.reply_to]: userEmail,
+      };
+
+      // Auto-reply params: ensure user receives the email (To field in EmailJS must use {{to_email}} or {{user_email}})
+      const autoReplyParams = {
+        ...templateParams,
+        [TEMPLATE_PARAMS.to_email]: userEmail,
+        [TEMPLATE_PARAMS.user_email]: userEmail,
+        // Auto-reply greeting uses sender's name
+        [TEMPLATE_PARAMS.from_name]: userName,
       };
 
       // Show loading toast
@@ -92,17 +102,23 @@ const ContactUs = () => {
         EMAILJS_CONFIG.PUBLIC_KEY
       );
 
-      // Send auto-reply if template is configured
+      // Send auto-reply to user (must include to_email/from_email = user's email so template sends TO them)
       if (EMAILJS_CONFIG.AUTO_REPLY_TEMPLATE_ID) {
-        await emailjs.send(
-          EMAILJS_CONFIG.SERVICE_ID,
-          EMAILJS_CONFIG.AUTO_REPLY_TEMPLATE_ID,
-          templateParams,
-          EMAILJS_CONFIG.PUBLIC_KEY
-        );
+        try {
+          await emailjs.send(
+            EMAILJS_CONFIG.SERVICE_ID,
+            EMAILJS_CONFIG.AUTO_REPLY_TEMPLATE_ID,
+            {
+              ...autoReplyParams,
+              // Many EmailJS templates use To: {{from_email}} — pass user's email as recipient
+              [TEMPLATE_PARAMS.from_email]: userEmail,
+            },
+            EMAILJS_CONFIG.PUBLIC_KEY
+          );
+        } catch (err) {
+          console.warn("Auto-reply failed (main message sent):", err);
+        }
       }
-
-      console.log("Email sent successfully:", result);
 
       // Dismiss loading toast and show success toast
       toast.dismiss(loadingToast);

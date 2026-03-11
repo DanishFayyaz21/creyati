@@ -13,6 +13,8 @@ export const TEMPLATE_PARAMS = {
   from_name: "from_name",
   from_email: "from_email",
   message: "message",
-  to_name: "to_name", // Optional: recipient name
-  reply_to: "reply_to", // Ensures replies go to the user
+  to_name: "to_name",
+  to_email: "to_email", // Auto-reply: set To Email to {{to_email}} in EmailJS template
+  user_email: "user_email", // Alternative: some templates use {{user_email}} for To
+  reply_to: "reply_to",
 };

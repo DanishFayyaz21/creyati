@@ -41,9 +41,11 @@ This message was sent from your website contact form.
 
 1. Go to "Email Templates" in your dashboard
 2. Click "Create New Template"
-3. Use this template structure for auto-reply:
+3. **Critical:** In the template settings, set the **To Email** field to `{{to_email}}` — this sends the auto-reply to the user who filled the form. Without this, the auto-reply will not reach the user.
+4. Use this template structure for auto-reply:
 
 ```
+To Email: {{to_email}}
 Subject: Thank you for contacting Creyeti!
 
 Hi {{from_name}},
@@ -57,7 +59,7 @@ Best regards,
 The Creyeti Team
 ```
 
-4. Note down your **Auto-Reply Template ID**
+5. Note down your **Auto-Reply Template ID**
 
 ## 4. Get Public Key
 
@@ -130,6 +132,8 @@ The form sends these parameters to your EmailJS template:
 
 ## Troubleshooting
 
+- **Main email in spam**: Configure SPF, DKIM, and DMARC for your sending domain (e.g. creyeti.com.au). Ask your email host or use [MXToolbox](https://mxtoolbox.com) to verify records.
+- **Auto-reply not received**: Ensure the Auto-Reply template's **To Email** field is `{{to_email}}` or `{{user_email}}`. Check the user's spam folder.
 - **Email not received**: Check spam folder, verify service configuration
 - **Console errors**: Verify all IDs and keys are correct
 - **Template not working**: Ensure template variables match the parameter names
